@@ -1,0 +1,16 @@
+// ==================================================
+// functions
+// ==================================================
+@use 'scss/variables' as var;
+
+@function bp($value: tb) {
+  @return map-get(var.$v_bp, $value);
+}
+@function rem($value: var.$v_font-size-default) {
+  @return $value/var.$v_font-size-default + rem;
+}
+@function vw($size, $viewport: bp(tb)) {
+  $rate: calc(100 / $viewport);
+  @return $rate * $size * 1vw;
+}
+// font-size: fn.vw(16, var.$v_design-sm);

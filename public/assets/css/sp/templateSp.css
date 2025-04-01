@@ -1,0 +1,468 @@
+/*
+============================================================
+templateSp 特集用テンプレ トップページ
+============================================================
+*/
+img {
+	vertical-align: top;
+}
+
+.breadcrumb {
+	margin-bottom: 0;
+}
+
+h2.__font-mincyo,
+h3.__font-mincyo,
+h4.__font-mincyo,
+p.__font-mincyo,
+.spMain.__font-mincyo h2,
+.spMain.__font-mincyo h3,
+.spMain.__font-mincyo h4,
+.spMain.__font-mincyo .spMain_lead {
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+h2.__font-gothic,
+h3.__font-gothic,
+h4.__font-gothic,
+p.__font-gothic,
+.spMain.__font-gothic h2,
+.spMain.__font-gothic h3,
+.spMain.__font-gothic h4,
+.spMain.__font-gothic .spMain_lead {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Yu Gothic",YuGothic,Arial,Meiryo;
+}
+
+.spMain_kv {
+	background-image: url(../../images/sp/kv_sp.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vw;
+    position: relative;
+}
+
+.spMain_kv h2 img{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: auto;
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.spMain_pagenav {
+	background-color:#b70f5b;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 45px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.spMain_pagenav_list {
+	letter-spacing: -.4em;
+}
+
+.spMain_pagenav_list >li{
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: bold;
+	letter-spacing: normal;
+	margin: 0 12px;
+}
+
+.spMain_pagenav_list >li a{
+	color: #fff;
+	position: relative;
+}
+
+.spMain_pagenav_list >li i{
+	height: 12px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -12px;
+}
+
+.spMain_inner {
+	margin: 0 20px;
+}
+
+.spMain_bg01 {
+	background-color: #fdfcf8;
+}
+
+#spMain_section01 {
+	color: #000;
+	padding-top:20px;
+}
+
+main h3 {
+	color: #000;
+	padding-bottom: 10px;
+	position: relative;
+	text-align: center;
+}
+
+main h3 >span{
+	font-size: 1rem;
+	font-weight: bold;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+	left: 0;
+}
+
+main #spMain_section01 h3 {
+	margin-bottom: 35px;
+}
+
+main #spMain_section01 h3 img{
+	width: 90px;
+}
+
+main #spMain_section02 h3 img{
+	width: 200px;
+}
+
+.spMain_lead {
+	font-size: 1.4rem;
+	line-height: 2;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.spMain_point {
+	margin-top: 30px;
+}
+
+.spMain_point >li{
+	background: linear-gradient(to right bottom, #e6d8ca, #fbf5ef);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.spMain_point_top {
+	height: 53px;
+	margin: 0;
+	position: relative;
+	top: -25px;
+	text-align: center;
+}
+
+.spMain_point_top img{
+	width: 86px;
+}
+
+.spMain_point_top > span::before,
+.spMain_point_top > span::after{
+	background-color:#b70f5b;
+	display: block;
+	content:'';
+	height: 4px;
+	position: absolute;
+	top: 25px;
+	width: 100px;
+}	
+
+.spMain_point_top > span::before{
+	left: 0;
+}
+
+.spMain_point_top > span::after{
+	right: 0;
+}
+
+.spMain_point h4 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.6;
+	margin:-20px 0 15px;
+	text-align: center;
+}
+
+.spMain_point h4 .sup{
+	font-size: 1.7rem;
+}
+
+.spMain_point_txt {
+	font-size: 1.4rem;
+	line-height: 1.85;
+	margin: 0 30px 25px;
+	text-align-last: left;
+}
+
+.spMain_bg02 {
+	background-color: #fcf4eb;
+	border-bottom:1px solid #fcf4eb;
+}
+
+.spMain_bg02_inner {
+	background-image: url(../../images/sp/innerbg_sp.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#spMain_section02 {
+	padding-top: 25px;
+}
+
+.spMain_inboxList {
+}
+
+.spMain_inboxList >li{
+	margin: 100px 0 115px;
+	padding-bottom: 35px;
+}
+
+.spMain_inboxList >li.pat01{
+	margin-left: 18px;
+}
+
+.spMain_inboxList >li.pat02{
+	margin-right: 18px;
+}
+
+.spMain_inboxList >li:last-child{
+	margin-bottom: 35px;
+}
+
+.spMain_inboxList >li.pat01{
+	background-color: #c3a487;
+	color: #775B41;
+}
+
+.spMain_inboxList >li.pat02{
+	background-color: #b70f5b;
+	color: #902053;
+}
+
+.spMain_inbox {
+	margin-bottom: -40px;
+	position: relative;
+	top: -80px;
+}
+
+.spMain_inbox_txt {
+	font-size: 1.3rem;
+	line-height: 1.75;
+	margin: 0 25px;
+}
+
+.spMain_inbox_txt h4 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.35;
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+.spMain_inboxList >li.pat01 .spMain_inbox_txt h4 {
+	margin-left: -18px;
+}
+
+.spMain_inboxList >li.pat02 .spMain_inbox_txt h4 {
+	margin-right: -18px;
+}
+
+.spMain_inbox_txt p{
+	color: #fff;
+	line-height: 2.25;
+	margin-top: 40px;
+}
+
+.spMain_inbox_img {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+	position: relative;
+}
+
+.spMain_inboxList >li.pat01 .spMain_inbox_img {
+	margin-top: 15px;	
+	margin-left: 25px;
+}
+
+.spMain_inboxList .spMain_inbox_img img{
+	margin-top: -15px;
+}
+
+.spMain_inboxList .spMain_inbox_img p{
+	width: 80px;
+}
+
+.spMain_inboxList >li.pat02 .spMain_inbox_img {
+	margin-right: 25px;
+}
+
+.spMain_inbox_img p{
+	position: absolute;
+	right: 18px;
+	bottom: -25px;
+}
+
+.spMain_inboxList >li.pat02 .spMain_inbox_img p{
+	left: 18px;
+}
+
+.spMain_btn_h3{
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.spMain_btn a{
+	border: 1px solid #fff;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	margin: 15px auto;
+	position: relative;
+	text-align: center;
+	width: 340px;
+}
+
+.spMain_btn a:hover{
+	transition:0.5s;
+	background-color:rgba(255, 255, 255, 0.3);
+}
+
+.spMain_btn i{
+	height: 14px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 30px;
+}
+
+.spMain_hotelnav {
+	padding: 30px 18px;
+}
+
+.spMain_hotelnav_inner {
+}
+
+.spMain_hotelnav_list {
+}
+
+.spMain_hotelnav_list >li a{
+	background-color: #82bee9;
+	border-bottom: 3px solid #0886d2;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+}
+
+.spMain_hotelnav_list >li i{
+	font-size: 1.8rem;
+	height: 18px;
+	margin: auto;
+	padding-top: 3px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	bottom: 0;
+}
+
+/*
+============================================================
+templateSp 特集用テンプレ リストページ
+============================================================
+*/
+
+#spMain_sectionList {
+	color: #000;
+    padding-top: 20px;
+}
+
+#spMain_sectionList h3 {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+
+.spMain_spList {
+	padding-bottom: 30px;
+}
+
+.spMain_spList >li {
+	padding:0 10px 20px;
+}
+
+.spMain_spList >li a{
+	border-top: 2px solid #902053;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+	display: block;
+	padding: 20px;
+}
+
+.spMain_spList >li a:visited{
+	color: #000;
+}
+
+.spMain_spList_img {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.spMain_spList_name {
+	color: #902053;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.spMain_spList_address {
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+}
+
+.spMain_spList_address::before {
+	background-color: #c3a487;
+	content: '';
+	height: 2px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 40px;
+}
+
+.spMain_spList_description {
+	font-size: 1.3rem;
+	line-height: 1.4;
+}

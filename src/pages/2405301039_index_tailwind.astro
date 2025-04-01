@@ -1,0 +1,397 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Picture } from 'astro:assets';
+import HeroBg from '../assets/img/Hero_bg.jpg';
+import HeroBgsp from '../assets/img/Hero_bg_sp.jpg';
+import HeroThumb from '../assets/img/Hero_influencer.png';
+import Sec01Thumb from '../assets/img/Sec01_thmub.jpg';
+import Sec01Bg from '../assets/img/Sec01_bg.jpg';
+import Sec02Thumb from '../assets/img/Sec02_thmub.jpg';
+import Sec02Bg from '../assets/img/Sec02_bg.jpg';
+import Sec03Thumb from '../assets/img/Sec03_thmub.jpg';
+import Sec03Bg from '../assets/img/Sec03_bg.jpg';
+---
+
+<Layout>
+	<main>
+		<!-----------------------------------------------------------
+		#Hero
+		------------------------------------------------------------>
+		<section id="Hero" class="relative overflow-hidden px-[calc(100/375*20*1vw)] pt-[calc(100/375*32*1vw)] pb-[calc(100/375*15*1vw)] md:px-[2rem] md:pt-[50px] md:pb-[42px]">
+			<div class="el_bg-photo gsap--mp5511ms blur-[50px] scale-[1.2] absolute top-0 left-0 w-full h-full">
+				<Picture formats={['avif', 'webp']} class="hidden md:inline-block w-full h-full object-cover aspect-auto" src={HeroBg} alt="" />
+				<Picture formats={['avif', 'webp']} class="md:hidden inline-block w-full h-full object-cover aspect-auto" src={HeroBgsp} alt="" />
+			</div>
+			<div class="el_bg-black absolute top-0 left-0 bg-black w-full h-full opacity-40"></div>
+			<div class="inner max-w-[1100px] mx-auto relative">
+				<div class="outer_col1--gd5624ix">
+					<h1 class="el_h gsap--cq5633pn opacity-0 v_font-sans-serif text-center text-white text-[calc(100/375*30*1vw)] md:text-[59px] font-bold leading-[1.2] pb-[calc(100/375*10*1vw)] md:pb-[10px]">ハピホテを賢く使って<br />
+						夏休みを<br class="md:hidden" />全力で楽しもう！</h1>
+					<p class="el_p gsap--vw0101si opacity-0 v_font-sans-serif text-center text-white text-[calc(100/375*15*1vw)] md:text-[21px] font-bold pb-[calc(100/375*20*1vw)] md:pb-[20px]">街ブラ・レジャー・旅行先……<br class="md:hidden" /><span class="inline-block md:mr-[1em]">困りたくないカップルへ</span><span>夏のハピホテ活用法！</span></p>
+					<p class="el_p-en gsap--nb0116pv opacity-0 v_font-damion text-center text-white text-[calc(100/375*16*1vw)] md:text-[32px] pb-[25px] flex items-center before:content-[''] before:mr-[calc(100/375*8*1vw)] before:h-[2px] md:before:h-[4px] before:bg-white before:grow after:content-[''] after:ml-[calc(100/375*8*1vw)] md:after:ml-[20px] after:h-[2px] md:after:h-[4px] after:bg-white after:grow">Happiest Hote Utilization in Summer!</p>
+					</div>
+				<div class="outer_col2--cr0239ao max-w-[780px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_160px]">
+					<div class="col1--lw0252hd maxmd:order-2">
+						<div class="inner flex maxmd:flex-col">
+							<div class="col1--yg0306zq maxmd:order-2 relative flex flex-col maxmd:gap-[calc(100/375*10*1vw)] w-full">
+								<h3 class="el_h gsap--cu0315gd opacity-0 maxmd:order-2 v_font-josefin text-white text-center text-[calc(100/375*12*1vw)] md:text-[12px] font-bold tracking-[0.4em] md:pb-[10px]">INTRODUCTION BY UTATORUKA</h3>
+								<p class="el_p v_font-sans-serif2 gsap--xh0330pv opacity-0 maxmd:order-1 v_font-sans-serif text-center text-[calc(100/375*13*1vw)] md:text-[15px] bg-white p-[calc(100/375*10*1vw)] md:py-[30px] rounded-[30px]">
+									✨非日常感を味わえるラブホテルを紹介✨<br />
+									instagramラブホ系１位のフォロワー数<br />
+									♡ カップルや女子会におすすめな<br class="md:hidden" />ラブホテル巡り𖠋𖠋 ❤︎</p>
+							</div>
+							<div class="col2--tq0338fv maxmd:order-1 maxmd:flex maxmd:justify-center">
+								<svg class="gsap--ds1058cx opacity-0 rotate-[30deg] translate-y-[10px] md:rotate-0 md:translate-x-[-15px] md:translate-y-[60px]" xmlns="http://www.w3.org/2000/svg" width="29.919" height="28.82" viewBox="0 0 29.919 28.82">
+									<path id="rect_1" data-name="rect_1" d="M11.5,0,23,20H0Z" transform="translate(0 11.5) rotate(-30)" fill="#fff"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col2--ba0410ky text-center maxmd:order-1">
+						<Picture formats={['avif', 'webp']} class="gsap--qm1112ha opacity-0 inline-block w-[calc(100/375*128*1vw)] md:w-full object-cover aspect-auto" src={HeroThumb} alt="INFLUENCER うたとるか" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-----------------------------------------------------------
+		#Introduce
+		------------------------------------------------------------>
+		<section id="Introduce" class="px-[calc(100/375*20*1vw)] py-[calc(100/375*45*1vw)] md:px-[2rem] md:py-[80px]">
+			<div class="inner max-w-[1100px] mx-auto">
+				<div class="outer_col1--id0421cu">
+					<p class="el_p gsap--bw0430zq opacity-0 leading-[2] v_font-sans-serif font-bold md:text-center text-[calc(100/375*16*1vw)] md:text-[18px]">
+						今年もやってきました！！待ちに待った夏休み！！！<br />
+						せっかくのお休み、友人・恋人など大切な方と特別な思い出を作りたいですよね。<br />
+						混む時期だけどホテルだって妥協したくない！そんな時はハピホテをフル活用！！<br />
+						シチュエーションに合わせてハピホテファミリーのうたとるかに紹介してもらいます。</p>
+				</div>
+			</div>
+		</section>
+
+		<!-----------------------------------------------------------
+		#Sec1
+		------------------------------------------------------------>
+		<section id="Sec1">
+			<div class="inner relative">
+				<div class="el_bg-photo absolute top-0 left-0 w-full h-full">
+					<Picture formats={['avif', 'webp']} class="inline-block w-full h-full object-cover aspect-auto" src={Sec01Bg} alt="" />
+				</div>
+			<!-- .section --------------------------------------------------->
+			<section class="section--bv0439hm">
+				<div class="inner pb-[calc(100/375*45*1vw)] md:pb-[83px] relative">
+					<div class="el_bg absolute top-0 right-0 bg-[#01DEDE] w-[calc(100%-100/375*20*1vw)] md:w-[calc(100/1680*1000*1vw)] h-full"></div>
+					<div class="outer_col2--rw0508fa max-w-[1390px] flex flex-col md:flex-row gap-[calc(100/375*20*1vw)] md:gap-[68px] relative">
+						<div class="col1--gg0514au w-full min1390:shrink-0 md:w-3/4 maxmd:pr-[calc(100/375*20*1vw)]">
+							<Picture formats={['avif', 'webp']} class="el_pic gsap--az1043kh opacity-0 inline-block w-full object-cover aspect-auto" src={Sec01Thumb} alt="浅草寺雷門の写真" />
+						</div>
+						<div class="col2--hw0521qv gsap--gy0531qd opacity-0 grow md:w-1/4 min1390:pr-0 md:pr-[2rem]">
+							<div class="outer-top flex flex-col items-center md:pt-[50px]">
+								<h3 class="v_font-damion relative text-[calc(100/375*20*1vw)] md:text-[26px] before:contents-[''] before:bg-black before:w-[1px] before:h-[calc(100/375*15*1vw)] before:md:h-[15px] before:absolute before:left-1/2 before:bottom-[calc(-100/375*16*1vw)] before:md:bottom-[-20px]">Situation</h3>
+								<h4 class="v_font-lato pt-[calc(100/375*15*1vw)] md:pt-[10px] text-[calc(100/375*30*1vw)] md:text-[90px] font-black maxmd:pb-[calc(100/375*5*1vw)]">01</h4>
+								<p class="v_font-sans-serif text-center text-[calc(100/375*20*1vw)] md:text-[20px] min1390:text-[25px] font-bold leading-[2] pb-[calc(100/375*10*1vw)] md:pb-[30px]">
+									街ブラ中<br class="md:hidden" /><span class="hidden md:inline-block">、</span>ひとやすみしたくなったら<br />
+									ハピホテKeepで<br />
+									近くのホテルを押さえよう！
+								</p>
+							</div>
+							<div class="outer-bottom">
+								<p class="el_p v_font-sans-serif flex text-[calc(100/375*15*1vw)] md:text-[15px] font-medium leading-[2] maxmd:pl-[calc(100/375*58*1vw)] maxmd:pr-[calc(100/375*48*1vw)]">
+									夏休みはたくさんお出かけしたい！<br />
+普段行かない街や観光名所、お気に入りスポットへ。<br />
+だけど夏の暑さにやられそう。<br />
+人混みから離れ二人きりになりたい。<br />
+でもホテルがどこにあるのか、お部屋が空いているのかわからない……<br />
+そんな時は、Keepでまるっと全部解決！
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- .section --------------------------------------------------->
+			<section class="section--is0551is relative">
+				<div class="inner gsap--ge0600xn opacity-0 flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]">
+					<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">【ラブホテル紹介】うたとるか🧸🐾//ラブホで生活してる(@utatoruka)がシェアした投稿</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+				</div>
+			</section>
+		</div>
+			<!-- .footer --------------------------------------------------->
+			<footer class="footer--qk0611gd">
+				<div class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]">
+					<p class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2024summer/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2024summer/img/icon_r-rect.svg)]
+					">
+						<span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"><img class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto" src="./assets/2024summer/img/icon_pin.svg" alt="" /></span>
+						<span class="el_span-bottom text-[calc(100/375*15*1vw)] md:text-[20px]">地図でKeepできる</span>
+					</p>
+					<a href="#" class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#01DEDE] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]">
+						ホテルを探す
+					</a>
+				</div>
+			</footer>
+		</section>
+		
+		<!-----------------------------------------------------------
+		#Sec2
+		------------------------------------------------------------>
+		<section id="Sec2">
+			<div class="inner relative">
+				<div class="el_bg-photo absolute top-0 left-0 w-full h-full">
+					<Picture formats={['avif', 'webp']} class="inline-block w-full h-full object-cover aspect-auto" src={Sec02Bg} alt="" />
+				</div>
+			<!-- .section --------------------------------------------------->
+			<section class="section--ek0647ls">
+				<div class="inner pb-[calc(100/375*45*1vw)] md:pb-[83px] relative">
+					<div class="el_bg absolute top-0 left-0 bg-[#E1E400] w-[calc(100%-100/375*20*1vw)] md:w-[calc(100/1680*1000*1vw)] h-full"></div>
+					<div class="outer_col2--vu0653nv max-w-[1390px] ml-auto flex flex-col md:flex-row gap-[calc(100/375*20*1vw)] md:gap-[68px] relative">
+						<div class="col1--wo0658cm md:order-2 w-full min1390:shrink-0 md:w-3/4 maxmd:pl-[calc(100/375*20*1vw)]">
+							<Picture formats={['avif', 'webp']} class="el_pic gsap--vk0713nm opacity-0 inline-block w-full object-cover aspect-auto" src={Sec02Thumb} alt="花火大会の写真" />
+						</div>
+						<div class="col2--tk0704mb gsap--dv0727gi opacity-0 md:order-1 grow md:w-1/4 min1390:pl-0 md:pl-[2rem]">
+							<div class="outer-top flex flex-col items-center md:pt-[50px]">
+								<h3 class="v_font-damion relative text-[calc(100/375*20*1vw)] md:text-[26px] before:contents-[''] before:bg-black before:w-[1px] before:h-[calc(100/375*15*1vw)] before:md:h-[15px] before:absolute before:left-1/2 before:bottom-[calc(-100/375*16*1vw)] before:md:bottom-[-20px]">Situation</h3>
+								<h4 class="v_font-lato pt-[calc(100/375*15*1vw)] md:pt-[10px] text-[calc(100/375*30*1vw)] md:text-[90px] font-black maxmd:pb-[calc(100/375*5*1vw)]">02</h4>
+								<p class="v_font-sans-serif text-center text-[calc(100/375*20*1vw)] md:text-[20px] min1390:text-[25px] font-bold leading-[2] pb-[calc(100/375*10*1vw)] md:pb-[30px]">
+									～花火・ライブ・海～<br />
+									夏のレジャーは<br />
+									ハピホテ休憩予約で<br />
+									時間を有効活用！
+								</p>
+							</div>
+							<div class="outer-bottom">
+								<p class="el_p v_font-sans-serif flex text-[calc(100/375*15*1vw)] md:text-[15px] font-medium leading-[2] maxmd:pl-[calc(100/375*58*1vw)] maxmd:pr-[calc(100/375*48*1vw)]">
+									夏はイベントが盛りだくさん！<br />
+予定の前や合間に時間ができちゃった！<br class="hidden md:inline-block" />帰る前に二人でゆっくり余韻に浸りたい。<br />
+そんな時はハピホテで休憩プランを予約して時間をうまく使おう！
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- .section --------------------------------------------------->
+			<section class="section--jh0738vr relative">
+				<div class="inner gsap--yh0757gy opacity-0 flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]">
+					<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">【ラブホテル紹介】うたとるか🧸🐾//ラブホで生活してる(@utatoruka)がシェアした投稿</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+				</div>
+			</section>
+		</div>
+			<!-- .footer --------------------------------------------------->
+			<footer class="footer--vc0804tn">
+				<div class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]">
+					<p class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2024summer/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2024summer/img/icon_r-rect.svg)]
+					">
+						<span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"><img class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto" src="./assets/2024summer/img/icon_pin.svg" alt="" /></span>
+						<span class="el_span-bottom text-[calc(100/375*15*1vw)] md:text-[20px]">地図から休憩予約</span>
+					</p>
+					<a href="#" class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#E1E400] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]">
+						ホテルを探す
+					</a>
+				</div>
+			</footer>
+		</section>
+
+		<!-----------------------------------------------------------
+		#Sec3
+		------------------------------------------------------------>
+		<section id="Sec3">
+			<div class="inner relative">
+				<div class="el_bg-photo absolute top-0 left-0 w-full h-full">
+					<Picture formats={['avif', 'webp']} class="inline-block w-full h-full object-cover aspect-auto" src={Sec03Bg} alt="" />
+				</div>
+			<!-- .section --------------------------------------------------->
+			<section class="section--py0824ma">
+				<div class="inner pb-[calc(100/375*45*1vw)] md:pb-[83px] relative">
+					<div class="el_bg absolute top-0 right-0 bg-[#FF80AA] w-[calc(100%-100/375*20*1vw)] md:w-[calc(100/1680*1000*1vw)] h-full"></div>
+					<div class="outer_col2--ma0829kb max-w-[1390px] flex flex-col md:flex-row gap-[calc(100/375*20*1vw)] md:gap-[68px] relative">
+						<div class="col1--kc0834hm w-full min1390:shrink-0 md:w-3/4 maxmd:pr-[calc(100/375*20*1vw)]">
+							<Picture formats={['avif', 'webp']} class="el_pic gsap--vr0851qp opacity-0 inline-block w-full object-cover aspect-auto" src={Sec03Thumb} alt="キャンプを楽しむカップルの写真" />
+						</div>
+						<div class="col2--zr0841uo gsap--lg0909ls opacity-0 grow md:w-1/4 min1390:pr-0 md:pr-[2rem]">
+							<div class="outer-top flex flex-col items-center md:pt-[50px]">
+								<h3 class="v_font-damion relative text-[calc(100/375*20*1vw)] md:text-[26px] before:contents-[''] before:bg-black before:w-[1px] before:h-[calc(100/375*15*1vw)] before:md:h-[15px] before:absolute before:left-1/2 before:bottom-[calc(-100/375*16*1vw)] before:md:bottom-[-20px]">Situation</h3>
+								<h4 class="v_font-lato pt-[calc(100/375*15*1vw)] md:pt-[10px] text-[calc(100/375*30*1vw)] md:text-[90px] font-black maxmd:pb-[calc(100/375*5*1vw)]">03</h4>
+								<p class="v_font-sans-serif text-center text-[calc(100/375*20*1vw)] md:text-[20px] min1390:text-[25px] font-bold leading-[2] pb-[calc(100/375*10*1vw)] md:pb-[30px]">
+									せっかくの夏休み旅行。<br />
+									ハピホテ予約なら<br class="md:hidden" />宿で<br class="hidden md:inline-block" />だって楽しめちゃう！
+								</p>
+							</div>
+							<div class="outer-bottom">
+								<p class="el_p v_font-sans-serif flex text-[calc(100/375*15*1vw)] md:text-[15px] font-medium leading-[2] maxmd:pl-[calc(100/375*58*1vw)] maxmd:pr-[calc(100/375*48*1vw)]">
+									やっぱり夏休みといえば旅行！<br />
+でも混雑していたり高かったりと肝心の宿探しが大変……<br />
+ラブホテルならリーズナブルで夢のようなデザインのお部屋もいっぱい！<br />
+ハピホテ予約にたくさんの宿泊プランが出ているから、お気に入りのホテルとプランを探してみてね！
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- .section --------------------------------------------------->
+			<section class="section--gc0920ek relative">
+				<div class="inner gsap--ou1013fi opacity-0 flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]">
+					<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/C60pAufL9dA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">【ラブホテル紹介】うたとるか🧸🐾//ラブホで生活してる(@utatoruka)がシェアした投稿</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+				</div>
+			</section>
+		</div>
+			<!-- .footer --------------------------------------------------->
+			<footer class="footer--pi0937gb">
+				<div class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]">
+					<p class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2024summer/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2024summer/img/icon_r-rect.svg)]
+					">
+						<span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"><img class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto" src="./assets/2024summer/img/icon_pin.svg" alt="" /></span>
+						<span class="el_span-bottom text-[calc(100/375*15*1vw)] md:text-[20px]">地図から宿泊予約</span>
+					</p>
+					<a href="#" class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#FF80AA] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]">
+						ホテルを探す
+					</a>
+				</div>
+			</footer>
+		</section>
+	</main>
+</Layout>
+
+<script>
+import SplitType from 'split-type'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+// ==================================================
+// #Hero animation
+// ==================================================
+const text = new SplitType("#Hero .gsap--xh0330pv");
+gsap.set(text.chars, { opacity: 0 });
+const tl = gsap.timeline();
+tl.to("#Hero .gsap--mp5511ms", {
+	duration:0.7,
+	delay:0.2,
+	scale:1,
+  filter: "blur(0px)",
+	ease: "power4.in"
+}).fromTo("#Hero .gsap--cq5633pn",{y:-50}, {
+	y:0,
+	opacity:1
+}).fromTo("#Hero .gsap--vw0101si",{x:-50}, {
+	x:0,
+	opacity:1
+}).fromTo("#Hero .gsap--nb0116pv",{x:50}, {
+	x:0,
+	opacity:1
+},"-=0.5").to("#Hero .gsap--cu0315gd", {
+	opacity:1
+}).to("#Hero .gsap--xh0330pv", {
+	opacity:1
+},"-=0.5").to("#Hero .gsap--ds1058cx", {
+	opacity:1
+},"-=0.5").to("#Hero .gsap--qm1112ha", {
+	opacity:1
+},"-=0.5").to(text.chars, {
+	opacity:1,
+	stagger: 0.02,
+	duration: 0.1
+})
+
+// ==================================================
+// #Introduce
+// ==================================================
+gsap.fromTo("#Introduce .gsap--bw0430zq",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Introduce",
+    start: "top center+=10%",
+  },
+	y:0,
+	opacity:1
+})
+
+// ==================================================
+// #Sec1
+// ==================================================
+gsap.fromTo("#Sec1 .gsap--az1043kh",{ x: -50 }, {
+	scrollTrigger: {
+    trigger: "#Sec1",
+    start: "top center+=20%",
+  },
+	x:0,
+	opacity:1
+})
+gsap.fromTo("#Sec1 .gsap--gy0531qd",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec1",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+gsap.fromTo("#Sec1 .gsap--ge0600xn",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec1 .gsap--ge0600xn",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+
+// ==================================================
+// #Sec2
+// ==================================================
+gsap.fromTo("#Sec2 .gsap--vk0713nm",{ x: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec2",
+    start: "top center+=20%",
+  },
+	x:0,
+	opacity:1
+})
+gsap.fromTo("#Sec2 .gsap--dv0727gi",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec2",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+gsap.fromTo("#Sec2 .gsap--yh0757gy",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec2 .gsap--yh0757gy",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+
+// ==================================================
+// #Sec3
+// ==================================================
+gsap.fromTo("#Sec3 .gsap--vr0851qp",{ x: -50 }, {
+	scrollTrigger: {
+    trigger: "#Sec3",
+    start: "top center+=20%",
+  },
+	x:0,
+	opacity:1
+})
+gsap.fromTo("#Sec3 .gsap--lg0909ls",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec3",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+gsap.fromTo("#Sec3 .gsap--ou1013fi",{ y: 50 }, {
+	scrollTrigger: {
+    trigger: "#Sec3 .gsap--ou1013fi",
+    start: "top center+=20%",
+  },
+	y:0,
+	opacity:1
+})
+</script>

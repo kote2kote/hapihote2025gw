@@ -1,0 +1,40 @@
+---
+interface Props {
+  bodyclass:string;
+	title: string;
+  description: string;
+  ogpimg: string;
+}
+const { bodyclass, title, description, ogpimg} = Astro.props;
+// Example: Construct a canonical URL using your production domain
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Example: Construct a URL for SEO meta tags using your current domain
+const socialImageURL = new URL('/assets/images/common/default_ogp.jpg', Astro.url);
+---
+
+<!doctype html>
+<html class="no-js" lang="ja">
+	<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title ? title : ''}</title>
+    <meta name="description" content={description ? description : ''}>
+    <meta property="og:title" content={title ? title : ''}>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={Astro.url}>
+    <meta property="og:image" content={ogpimg ? `${Astro.url}${ogpimg}` : socialImageURL}>
+    <meta property="og:image:alt" content={title ? `${title}の記事画像` : '記事画像'}>
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/assets/icons/icon-512x512.png" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <slot name="css" />
+    <slot name="js" />
+  </head>
+	<body id="body" class={bodyclass}>
+    <slot />
+	</body>
+</html>
+<style lang="scss" is:global>
+//
+</style>

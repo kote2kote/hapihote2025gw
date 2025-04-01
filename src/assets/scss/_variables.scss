@@ -1,0 +1,107 @@
+// ==================================================
+// variables
+// ==================================================
+// --------------------------------------------------
+// pallet
+// --------------------------------------------------
+$v_pallet-00: #000; // 基本テキストカラー
+$v_pallet-01: #fff; // 基本背景カラー
+$v_pallet-02: #0d45d3; // 基本リンクカラー
+$v_pallet-03: #1e67f7; // 基本リンクホバーカラー
+
+// -- base variables -------------- //
+$v_color: $v_pallet-00; // 基本テキストカラー
+$v_bgcolor: $v_pallet-01; // 基本背景カラー
+$v_link: $v_pallet-02; // 基本リンクカラー
+$v_link-hover: $v_pallet-03; // 基本・リンクホバーカラー
+
+// -- base variables to css -------------- //
+.v_color-00 {
+  color: $v_pallet-00;
+}
+.v_color-01 {
+  color: $v_pallet-01;
+}
+.v_color-02 {
+  color: $v_pallet-02;
+}
+.v_color-03 {
+  color: $v_pallet-03;
+}
+.v_bg-00 {
+  background-color: $v_pallet-00;
+}
+.v_bg-01 {
+  background-color: $v_pallet-01;
+}
+.v_bg-02 {
+  background-color: $v_pallet-02;
+}
+.v_bg-03 {
+  background-color: $v_pallet-03;
+}
+
+// ==================================================
+// typography
+// ==================================================
+// -- base sans-serif -------------- //
+$v_font-sans-serif: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'Zen Kaku Gothic New',
+  'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Arial', 'Meiryo', sans-serif;
+$v_font-sans-serif2: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+// -- base serif -------------- //
+$v_font-serif: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho',
+  serif;
+
+// -- web font -------------- //
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// -- base variables to css -------------- //
+.v_font-sans-serif {
+  font-family: $v_font-sans-serif;
+}
+.v_font-sans-serif2 {
+  font-family: $v_font-sans-serif2;
+}
+.v_font-serif {
+  font-family: $v_font-serif;
+}
+.v_font-damion {
+  font-family: "Damion", cursive;
+}
+.v_font-josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+.v_font-lato {
+  font-family: "Lato", sans-serif;
+}
+// .v_font-notojp {
+//   font-family: 'Noto Sans JP', sans-serif;
+// }
+// .v_font-bebas {
+//   font-family: "Bebas Neue", sans-serif;
+// }
+
+// --------------------------------------------------
+// utiles
+// --------------------------------------------------
+// -- design width --------------------
+$v_design-sp: 428; // スマホ最小幅
+$v_design-tb: 600; // スマホデザイン分岐点
+$v_design-pc: 1024; // PC最大幅
+$v_design-sm: 640; // スマホ最小幅
+$v_design-md: 768; // スマホデザイン分岐点
+$v_design-lg: 1024; // PC最大幅
+$v_design-xl: 1280; // PC最大幅
+$v_design-2xl: 1536; // PC最大幅
+
+// -- breakpoints --------------------
+$v_bp: (
+  sp: 428,
+  tb: 600,
+  pc: 1024,
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280,
+  2xl: 1536,
+) !default;

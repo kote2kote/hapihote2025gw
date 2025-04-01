@@ -1,0 +1,155 @@
+// ==================================================
+// mixins
+// ==================================================
+@use 'functions' as fn;
+
+//== cm =======================
+@mixin cm {
+  box-sizing: border-box;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(245, 245, 245, 0.1),
+    rgba(245, 245, 245, 0.1) 10px,
+    rgba(136, 136, 136, 0.2) 0,
+    rgba(136, 136, 136, 0.2) 20px
+  );
+  border: solid 1px rgba(68, 68, 68, 0.2);
+}
+
+//== link-colors =======================
+@mixin link-colors($color) {
+  color: $color;
+  text-decoration: none;
+  transition: initial;
+  &:hover {
+    color: lighten($color, 15%);
+    text-decoration: underline;
+  }
+  &:visited {
+    color: desaturate($color, 50%);
+  }
+}
+
+//== responsive =======================
+
+@mixin bp($value: tb) {
+  // sp and tab and pc
+  @if $value == sp {
+    @media only screen and (min-width: fn.bp(sp) + px) {
+      @content;
+    }
+  } @else if $value == maxsp {
+    @media only screen and (max-width: fn.bp(sp) + px) {
+      @content;
+    }
+  } @else if $value == sptb {
+    @media only screen and (min-width: fn.bp(sp) + px) and (max-width: fn.bp(tb) - 1 + px) {
+      @content;
+    }
+  } @else if $value == tb {
+    @media only screen and (min-width: fn.bp(tb) + px) {
+      @content;
+    }
+  } @else if $value == maxtb {
+    @media only screen and (max-width: fn.bp(tb) - 1 + px) {
+      @content;
+    }
+  } @else if $value == tbpc {
+    @media only screen and (min-width: fn.bp(tb) + px) and (max-width: fn.bp(pc) - 1 + px) {
+      @content;
+    }
+  } @else if $value == pc {
+    @media only screen and (min-width: fn.bp(pc) + px) {
+      @content;
+    }
+  } @else if $value == maxpc {
+    @media only screen and (max-width: fn.bp(pc) - 1 + px) {
+      @content;
+    }
+
+    // sm
+  } @else if $value == sm {
+    @media only screen and (min-width: fn.bp(sm) + px) {
+      @content;
+    }
+  } @else if $value == maxsm {
+    @media only screen and (max-width: fn.bp(sm) - 1  + px) {
+      @content;
+    }
+  } @else if $value == smmd {
+    @media only screen and (min-width: fn.bp(sm) + px) and (max-width: fn.bp(md) - 1  + px) {
+      @content;
+    }
+
+    // md
+  } @else if $value == md {
+    @media only screen and (min-width: fn.bp(md) + px) {
+      @content;
+    }
+  } @else if $value == maxmd {
+    @media only screen and (max-width: fn.bp(md) - 1  + px) {
+      @content;
+    }
+  } @else if $value == mdlg {
+    @media only screen and (min-width: fn.bp(md) + px) and (max-width: fn.bp(lg) - 1  + px) {
+      @content;
+    }
+
+    // lg
+  } @else if $value == lg {
+    @media only screen and (min-width: fn.bp(lg) + px) {
+      @content;
+    }
+  } @else if $value == maxlg {
+    @media only screen and (max-width: fn.bp(lg) - 1  + px) {
+      @content;
+    }
+  } @else if $value == lgxl {
+    @media only screen and (min-width: fn.bp(lg) + px) and (max-width: fn.bp(xl) - 1  + px) {
+      @content;
+    }
+
+    // xl
+  } @else if $value == xl {
+    @media only screen and (min-width: fn.bp(xl) + px) {
+      @content;
+    }
+  } @else if $value == maxxl {
+    @media only screen and (max-width: fn.bp(xl) - 1  + px) {
+      @content;
+    }
+  } @else if $value == xl2xl {
+    @media only screen and (min-width: fn.bp(xl) + px) and (max-width: fn.bp(2xl) - 1  + px) {
+      @content;
+    }
+
+    // 2xl
+  } @else if $value == max2xl {
+    @media only screen and (max-width: fn.bp(2xl) - 1  + px) {
+      @content;
+    }
+  } @else if $value == 2xl {
+    @media only screen and (min-width: fn.bp(2xl) + px) {
+      @content;
+    }
+
+    // retina
+  } @else if $value == retina {
+    @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+    }
+
+    // print
+  } @else if $value == print {
+    @media print {
+      @content;
+    }
+  }
+}
+
+//== ieのみ適用 =======================
+@mixin ie() {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}

@@ -1,0 +1,536 @@
+/*
+============================================================
+templateSp 特集用テンプレ トップページ
+============================================================
+*/
+img {
+	vertical-align: top;
+}
+
+#hamburger_menu {
+	display: none;
+}
+
+.breadcrumb {
+	margin-bottom: 0;
+}
+
+h2.__font-mincyo,
+h3.__font-mincyo,
+h4.__font-mincyo,
+p.__font-mincyo,
+.spMain.__font-mincyo h2,
+.spMain.__font-mincyo h3,
+.spMain.__font-mincyo h4,
+.spMain.__font-mincyo .spMain_lead {
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+h2.__font-gothic,
+h3.__font-gothic,
+h4.__font-gothic,
+p.__font-gothic,
+.spMain.__font-gothic h2,
+.spMain.__font-gothic h3,
+.spMain.__font-gothic h4,
+.spMain.__font-gothic .spMain_lead {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Yu Gothic",YuGothic,Arial,Meiryo;
+}
+
+.spMain_kv {
+	background-image: url(../../images/sp/kv_pc.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 560px;
+}
+
+.spMain_kv_inner{
+	height: 560px;
+	margin: auto;
+	position: relative;
+	width: 1100px;
+}
+
+.spMain_kv h2 img{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.spMain_pagenav {
+	background-color:#b70f5b;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 90px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.spMain_pagenav_list {
+	letter-spacing: -.4em;
+}
+
+.spMain_pagenav_list >li{
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: normal;
+	margin: 0 34px;
+}
+
+.spMain_pagenav_list >li a{
+	color: #fff;
+	position: relative;
+}
+
+.spMain_pagenav_list >li i{
+	height: 18px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -18px;
+}
+
+.spMain_inner {
+	margin: auto;
+	width: 1100px;
+}
+
+.spMain_bg01 {
+	background-color: #fdfcf8;
+}
+
+#spMain_section01 {
+	color: #000;
+	padding: 50px 0 80px;
+}
+
+main h3 {
+	color: #000;
+	padding-bottom: 25px;
+	position: relative;
+	text-align: center;
+}
+
+main h3 >span{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+main #spMain_section01 h3 {
+	margin: 0 auto 35px;
+	width: 176px;
+}
+
+main #spMain_section02 h3 {
+	margin: auto;
+	width: 404px;
+}
+
+.spMain_lead {
+	font-size: 2rem;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.spMain_point {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 70px -20px 0;
+}
+
+.spMain_point >li{
+	background: linear-gradient(to right bottom, #e6d8ca, #fbf5ef);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 20px;
+	padding: 0 50px 40px;
+	width: calc(50% - 40px);
+}
+
+.spMain_point_top {
+	height: 53px;
+	margin: -24px -50px 20px;
+	position: relative;
+	text-align: center;
+}
+
+.spMain_point_top img{
+	width: 85px;
+}
+
+.spMain_point_top > span::before,
+.spMain_point_top > span::after{
+	background-color:#b70f5b;
+	display: block;
+	content:'';
+	height: 4px;
+	position: absolute;
+	top: 24px;
+	width: 200px;
+}	
+
+.spMain_point_top > span::before{
+	left: 0;
+}
+
+.spMain_point_top > span::after{
+	right: 0;
+}
+
+.spMain_point h4 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 1.4;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.spMain_point h4 .sup{
+	font-size: 2.1rem;
+}
+
+.spMain_point_txt {
+	font-size: 1.4rem;
+	line-height: 1.85;
+	margin-bottom: 30px;
+	text-align-last: left;
+}
+
+.spMain_bg02 {
+	background-color: #fcf4eb;
+	border-bottom:1px solid #fcdae9 ;
+}
+
+.spMain_bg02_inner {
+	background-image: url(../../images/sp/innerbg_pc.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#spMain_section02 {
+	padding-top: 30px;
+}
+
+.spMain_inboxList {
+	margin: auto;
+	width: 1100px;
+}
+
+.spMain_inboxList >li{
+	height: 640px;
+	margin: 200px 0 234px;
+}
+.spMain_inboxList >li.btn_3{
+	height:540px;
+}
+
+.spMain_inboxList >li:last-child{
+	margin-bottom: 80px;
+}
+
+.spMain_inboxList >li.pat01{
+	background-color: #c3a487;
+	color: #775B41;
+}
+
+.spMain_inboxList >li.pat02{
+	background-color: #b70f5b;
+	color: #902053;
+}
+
+.spMain_inbox {
+	display: flex;
+	margin-bottom: -60px;
+	position: relative;
+	top: -150px;
+}
+
+.spMain_inbox_txt {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 30px;
+	width: 505px;
+	height: 0;
+}
+
+.spMain_inbox_txt h4 {
+	font-size: 2.8rem;
+	font-weight: bold;
+}
+
+.spMain_inbox_txt p{
+	color: #fff;
+	line-height: 2.25;
+	margin-top: 50px;
+}
+
+.spMain_inbox_img {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+	position: relative;
+}
+
+.spMain_inboxList >li.pat02 .spMain_inbox_img {
+	margin-left: 30px;
+}
+
+.spMain_inbox_img p{
+	position: absolute;
+	right: 15px;
+	bottom: -55px;
+	width: 180px;
+}
+
+.spMain_inboxList >li.pat02 .spMain_inbox_img p{
+	left: 15px;
+}
+
+main #spMain_section02 .spMain_btn_h3{
+	font-size: 1.6em;
+	color: #fff;
+	width: auto;
+}
+
+.spMain_btn_wrap{
+	display: flex;
+	display: -webkit-flex;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+	flex-wrap:wrap;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+
+.spMain_btn_wrap .btn_5{
+	margin-left: 70px;
+	margin-right: auto;
+}
+
+.spMain_btn{
+	margin: 15px 0;
+}
+
+
+.spMain_btn a{
+	border: 1px solid #fff;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #fff;
+	display: block;
+	font-size: 1.8rem;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	width: 300px;
+	border-radius: 15px;
+}
+
+.spMain_btn a:hover{
+	transition:0.5s;
+	background-color:rgba(255, 255, 255, 0.3);
+}
+
+.spMain_btn i{
+	height: 18px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+}
+
+.spMain_hotelnav {
+	border-top: 2px solid #fcf4eb;
+	padding: 70px 0 46px;
+}
+
+.spMain_hotelnav_inner {
+	margin: auto;
+	width: 1100px;
+}
+
+.spMain_hotelnav_list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.spMain_hotelnav_list >li a{
+	background-color: #82bee9;
+	border-bottom: 6px solid #0886d2;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 1.6rem;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 10px 24px;
+	position: relative;
+	text-align: center;
+	width: 260px;
+}
+
+.spMain_hotelnav_list >li.wide a{
+	font-size: 2rem;
+	width: 1100px;
+}
+
+.spMain_hotelnav_list >li i{
+	font-size: 1.8rem;
+	height: 18px;
+	margin: auto;
+	padding-top: 3px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	bottom: 0;
+}
+
+/*
+============================================================
+templateSp 特集用テンプレ リストページ
+============================================================
+*/
+
+#spMain_sectionList {
+	color: #000;
+    padding-top: 20px;
+}
+
+#spMain_sectionList h3 {
+	margin:0 auto 35px;
+	width: 758px;
+}
+
+.spMain_spList {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px;
+	padding-bottom: 30px;
+	justify-content: space-between;
+}
+
+.spMain_spList >li {
+	display: flex;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding:0 20px 40px;
+	width: 50%;
+}
+
+.spMain_spList >li a{
+	border-top: 4px solid #902053;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
+	display: block;
+	padding: 50px 50px 35px;
+	text-decoration: none;
+	width: 75%;
+}
+
+.spMain_spList >li a:visited{
+	color: #000;
+}
+
+.spMain_spList >li a:hover{
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	opacity: .6;
+}
+
+.spMain_spList_img {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.spMain_spList_name {
+	color: #902053;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.spMain_spList_address {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 1.2;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	position: relative;
+	text-align: center;
+}
+
+.spMain_spList_address::before {
+	background-color: #c3a487;
+	content: '';
+	height: 2px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 40px;
+}
+
+.spMain_spList_description {
+	font-size: 1.6rem;
+}
+
+
+/*
+============================================================
+templateSp フッターエリア特殊20211110
+============================================================
+*/
+
+li.md1{
+	width: 50%;
+}
+li.md2{
+	width: 50%;
+}
+
+.spMain_hotelnav_list >li.md1 a{
+	width: 550px;
+	margin: 0 0 24px 10px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 4px;
+}
+
+.spMain_hotelnav_list >li.md2 a{
+	width: 550px;
+	margin: 0 10px 24px 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 0;
+	border-left: 1px solid #fff;
+}

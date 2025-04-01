@@ -1,0 +1,709 @@
+a:hover {
+	text-decoration: underline;
+}
+
+/* disable */
+
+.disable a:hover{
+	text-decoration: none;
+}
+
+
+select,
+input[type="text"] ,
+input[type="tel"] ,
+input[type="email"] ,
+input[type="password"] {
+	border: 1px solid #dedff0;
+    box-sizing: border-box;
+}
+
+select {
+	background-image: url(../images/angle-down-solid.svg);
+	background-repeat: no-repeat;
+}
+
+.inbox .tit {
+/*	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical*/;
+}
+
+.header_info a{
+	background-color: #ffeded;
+	border: 1px solid #c60000;
+	color: #c60000 !important;
+	display: block;
+	font-weight: bold;
+	line-height: 35px;
+	overflow: hidden;
+	padding: 0 10px;
+	position: relative;
+}
+
+.header_info i{
+    height: 15px;
+    margin: auto;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.header_info .txt{
+	padding-left: 20px;
+}
+
+.header_welcome dl{
+	letter-spacing: -.4em;
+}
+
+.header_welcome dt{
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: normal;
+	padding: 5px 10px;
+}
+
+.header_welcome dd{
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+.kv_search {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.searchResult_freesearch {
+	overflow: hidden;
+}
+
+.kv_search >li,
+.searchResult_freesearch >li {
+	float: left;
+}
+
+.kv_search >li.btn button,
+.areaSearch_freesearch >li.btn button,
+.searchResult_freesearch >li.btn button{
+	border: 1px solid #dedff0;
+	border-left: none;
+    box-sizing: border-box;
+	color: #1e2679;
+	display: block;
+	padding: 12px 17px;
+}
+
+.hamburger_menu_list >li ul.search_btn >li a{
+	background: linear-gradient(to bottom,#555b9b,#1e2678);
+	box-sizing: border-box;
+	color: #fff;
+	display: block;
+	letter-spacing: -.1em;
+	position: relative;
+	text-align: center;
+}
+
+.main_info_list{
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .15);
+	overflow: hidden;
+}
+.main_info_list > li{
+	float: left;
+}
+
+
+.pr_wide {
+	background-color: #f8f9ff;
+	border: 1px solid #b8bae3;
+	position: relative;
+}
+
+.pr_wide .tag {
+	background-color: #1e2679;
+	color: #fff;
+	display: block;
+	padding: 3px 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.spFeature_list {
+	overflow: hidden;
+	text-align: center;
+}
+
+.spFeature_list >li {
+	float: left;
+	position: relative;
+}
+
+.spFeature_list >li a {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	color: #fff;
+	display: block;
+}
+
+.newInfo_list >li a{
+	border-bottom: 1px solid #dedff0;
+	display: block;
+	position: relative;
+}
+
+.newInfo_list >li .date{
+	background-color:#1e2679;
+	color: #fff;
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+}
+
+.newInfo_list >li .hotelName {
+	color: #af8432;
+	font-weight: bold;
+}
+
+.newInfo_list >li .icon{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.others a,
+.footer_list a{
+	background-image: url(../images/icon01.png);
+    background-repeat: no-repeat;
+	display: block;
+}
+
+.others a{
+	font-weight: bold;
+	text-align: right;
+}
+
+.newReviews_list > li {
+	border-bottom: 1px solid #dedff0;
+}
+
+.newReviews_list > li .above {
+	overflow: hidden;
+}
+
+.newReviews_list > li .pic {
+	float: left;
+}
+
+.newReviews_list > li .txt {
+	overflow: hidden;
+}
+
+.newReviews_list > li .name a{
+	color: #af8432;
+	font-weight: bold;
+}
+
+.newReviews_list > li .rating{
+	overflow: hidden;
+}
+
+.newReviews_list > li .starArea{
+	float: left;
+}
+
+.newReviews_list > li .starArea i{
+	color: #af8432;
+}
+
+.newReviews_list > li .description {
+	background-color:#f8f9ff;
+}
+
+.newReviews_list > li .description dt{
+	float: left;
+	font-weight: bold;
+}
+
+.newReviews_list > li .description dt::after{
+	content: ':';
+}
+
+.newReviews_list > li .description .by{
+	font-weight: bold;
+}
+
+.main_ranking .ranking_access .stit{
+	margin-top: 0;
+}
+
+.main_ranking .ranking_list >li a{
+	border-bottom:1px solid #dedff0;
+	display: block;
+	font-weight: bold;
+	position: relative;
+}
+
+.main_ranking .ranking_list >li.first .crown {
+	color: #af9732;
+}
+
+.main_ranking .ranking_list >li.second .crown {
+	color: #aaa;
+}
+
+.main_ranking .ranking_list >li.third .crown {
+	color: #c76c51;
+}
+
+.main_ranking .ranking_list >li .icon{
+	font-size: 1.6rem;
+	height: 16px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 18px;
+	bottom: 0;
+}
+
+.about_list >li .about_txtbox_tit a{
+	color: #af8432;
+	font-weight: bold;
+}
+
+.feature_list_tit {
+	color: #af8432;
+	font-weight: bold;
+}
+
+.feature_list_bnr .icon {
+	position: absolute;
+}
+
+.common-hotelList_name {
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-weight: bold;
+    line-height: 1.2 !important;
+    position: relative;
+}
+
+.common-hotelList_name .caution{
+	position: absolute;
+}
+
+.common-hotelList_name a,
+.common-hotelList >li.free .common-hotelList_name,
+.common-hotelList >li.general .common-hotelList_name{
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.common-hotelList_name a{
+	color: #af8432 !important;
+	text-decoration: none;
+}
+
+.hotel_std >h3 >a,.hotel_light >h3 >a{
+	color:#1e2679 !important;
+}
+.hotel_non >h3 >a{
+	color: #d9d9d9 !important;
+}
+
+.common-hotelList_name a:hover{
+	text-decoration: underline;
+}
+
+.common-hotelList_name .icon{
+	position: absolute;
+}
+
+.common-hotelList >li.pr .common-hotelList_name .icon{
+	background-color: #1e2779;
+	color: #fff;
+    display: inline-block;
+    text-align: center;
+    z-index: 2;
+}
+
+.common-hotelList_mid {
+	overflow: hidden;
+}
+
+.common-hotelList_picture {
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.common-hotelList_picture_list >li{
+	float: left;
+}
+
+.common-hotelList_rating .icon,
+.common-hotelList_rating .score{
+	float: left;
+}
+
+.common-hotelList_rating .score{
+	font-weight: bold;
+}
+
+.common-hotelList_rating .starArea a {
+    background-image: url(../images/icon01.png);
+    background-position: right 0 center;
+    background-repeat: no-repeat;
+    color: #af8432;
+    display: block;
+    width: 100%;
+}
+
+.no-review a{
+	color:#1e2678 !important;
+	font-weight: bold;
+}
+
+.common-hotelList_rating {
+	overflow: hidden;
+}
+
+.common-hotelList_address ,
+.common-hotelList_tel ,
+.common-hotelList_walk ,
+.common-hotelList_car {
+	overflow: hidden;
+	position: relative;
+}
+
+.common-hotelList_address .icon,
+.common-hotelList_tel .icon,
+.common-hotelList_walk .icon,
+.common-hotelList_car .icon{
+	position: absolute;
+	left: 0;
+	text-align: center;
+}
+
+.common-hotelList_address .txt,
+.common-hotelList_tel .txt,
+.common-hotelList_walk .txt,
+.common-hotelList_car .txt{
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.common-hotelList >li.general .common-hotelList_address ,
+.common-hotelList_address a{
+	background-image: url(../images/icon01.png);
+    background-position: right 0 center;
+    background-repeat: no-repeat;
+    display: block;
+	padding-right: 25px;
+}
+
+.common-hotelList_status {
+	overflow: hidden;
+}
+
+.common-hotelList_status >li {
+	background-color: #fff;
+	border:1px solid #dedff0;
+	box-sizing: border-box;
+	float: left;
+	font-weight: bold;
+	position: relative;
+}
+
+.common-hotelList_status >li .icon{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.common-hotelList_status >li.favorite a{
+	color: #b8bae3;
+	display: block;
+}
+
+.common-hotelList_status >li.favorite.js-on {
+	background-color: #af8434;
+	border:none;
+}
+
+.common-hotelList_status >li.favorite.js-on a{
+	color: #fff;
+}
+
+.common-hotelList_status >li.favorite i{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.common-hotelList_price >li {
+	border:1px solid #dedff0;
+	overflow: hidden;
+}
+
+.common-hotelList_price >li dt{
+	color: #fff;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+}
+
+.common-hotelList_price >li dd{
+	background-color: #fff;
+	color: #ff0000;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.common-hotelList_price >li dd span{
+	font-weight: normal;
+}
+
+.common-hotelList_lead {
+	color: #c60000;
+}
+
+.common-hotelList_btn{
+	overflow: hidden;
+}
+
+.common-hotelList_btn >li{
+	box-sizing: border-box;
+	float: left;
+	width: 33.3333%;
+}
+
+.common-hotelList_btn >li a{
+	background: linear-gradient(to bottom,#555b9b,#1e2678);
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+
+.common-hotelList_btn >li a.disabled{
+	background: #ddd;
+	color: #aaa;
+}
+
+.common-hotelList_btn >li .icon{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.common-hotelList >li.__full .common-hotelList_name {
+	display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.common-hotelList >li.__full .common-hotelList_name .icon{
+	background-color: #d20810;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.common-hotelList >li.__full.__vacantFixed .common-hotelList_name .icon{
+	background-color: #0886d2;
+}
+
+.hoteldetail_basiclist_third >dd >ul >li >dl .icon a,
+.common-hotelList >li.__vacant .common-hotelList_name .icon a{
+	background: linear-gradient(to bottom,#e1346f,#ffa57e);
+	box-sizing: border-box;
+	color: #fff !important;
+	display: block;
+	font-weight: bold;
+}
+
+.common-hotelList >li.__full .common-hotelList_name .time{
+	display: block;
+	font-weight: bold;
+	position: absolute;
+}
+
+.common-hotelList_freedd {
+	overflow: hidden;
+}
+
+.common-hotelList_freedd .favorite{
+	float: right;
+}
+
+.common-hotelList_freedd .favorite a {
+    background-color: #fff;
+    border: 1px solid #dedff0;
+    box-sizing: border-box;
+    float: left;
+    color: #b8bae3;
+    display: block;
+    position: relative;
+}
+
+.common-hotelList_freedd >li.favorite.js-on a{
+    background-color: #af8434;
+    border: none;
+}
+
+.common-hotelList_freedd >li.favorite i{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.common-hotelList >li.general ,
+.common-hotelList >li.general .common-hotelList_name {
+	background:none;
+	border-color: #d9d9d9;
+	color: #d9d9d9;
+}
+
+.common-change_outer {
+    background-color: #f8f9ff;
+    border: 1px solid #dedff0;
+    border-right: none;
+    border-left: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.common-change_outer.js-fixed {
+	position: fixed;
+	bottom: 0;
+}
+
+.common-hit {
+	font-weight: bold;
+	line-height: 1;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.common-hit span{
+	color: #c60000;
+}
+
+.common-changeList {
+	float: right;
+}
+
+.common-changeList >li{
+	float: left;
+}
+
+.common-changeList >li a{
+	background:linear-gradient(to bottom,#555b9b,#1e2678);
+	box-sizing: border-box;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+}
+
+.common-changeList >li.area a{
+	text-align: center;
+}
+
+.common-changeList >li.condition a{
+	position: relative;
+}
+
+.common-changeList >li.condition .icon{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.common-changeList >li.reserve a{
+	text-align: center;
+}
+
+.common-print {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.common-print a {
+	background: linear-gradient(to bottom,#555b9b,#1e2678);
+    box-sizing: border-box;
+    color: #fff !important;
+    display: block;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Yu Gothic",YuGothic,Arial,Meiryo;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+}
+
+.common-print .icon{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next{
+	background-color: rgb(30, 38, 121, .7);
+	background-repeat: no-repeat;
+	color: #fff;
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.bx-wrapper .bx-prev{
+	background-image: url(../images/chevron-left-solid.svg);
+	left: 0;
+}
+
+.bx-wrapper .bx-next{
+	background-image: url(../images/chevron-right-solid.svg);
+	right: 0;
+}
+
+.couponBox_list_outer .bx-wrapper .bx-prev,
+.couponBox_list_outer .bx-wrapper .bx-next{
+	background-color:#1e2679;
+}
+
+.areaSearchBox_reserved_calendar >.month {
+	font-weight: bold;
+}
+
+.areaSearchBox_reserved_calendar .detail_list >li dt {
+	font-weight: bold;
+}

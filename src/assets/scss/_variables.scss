@@ -53,8 +53,8 @@ $v_font-serif: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho
   serif;
 
 // -- web font -------------- //
-@import url('https://fonts.googleapis.com/css2?family=Damion&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+// @import url('https://fonts.googleapis.com/css2?family=Damion&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 // -- base variables to css -------------- //
 .v_font-sans-serif {
   font-family: $v_font-sans-serif;
@@ -65,15 +65,18 @@ $v_font-serif: 'Times New Roman', 'YuMincho', 'Hiragino Mincho ProN', 'Yu Mincho
 .v_font-serif {
   font-family: $v_font-serif;
 }
-.v_font-damion {
-  font-family: "Damion", cursive;
+.v_font-jost {
+  font-family: "Jost", sans-serif;
 }
-.v_font-josefin {
-  font-family: "Josefin Sans", sans-serif;
-}
-.v_font-lato {
-  font-family: "Lato", sans-serif;
-}
+// .v_font-damion {
+//   font-family: "Damion", cursive;
+// }
+// .v_font-josefin {
+//   font-family: "Josefin Sans", sans-serif;
+// }
+// .v_font-lato {
+//   font-family: "Lato", sans-serif;
+// }
 // .v_font-notojp {
 //   font-family: 'Noto Sans JP', sans-serif;
 // }

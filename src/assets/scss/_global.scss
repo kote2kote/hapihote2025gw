@@ -11,6 +11,17 @@ html {
   scroll-behavior: smooth;
   // font-size: 16px;
 }
+.h2025gw {
+  font-family: var.$v_font-sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  font-size: 15px;
+  min-width: 320px;
+}
 // body {
 //   background: var.$v_bgcolor;
 //   color: var.$v_color;

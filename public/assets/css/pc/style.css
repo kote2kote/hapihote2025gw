@@ -3376,17 +3376,20 @@ footer
 .footer_btm {
 	overflow: hidden;
 	padding: 32px 0 26px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.footer_btm_logo,
+/* .footer_btm_logo,
 .footer_btm_copy,
 .footer_btm_list >li{
 	float: left;
-}
+} */
 
-.footer_btm_list{
+/* .footer_btm_list{
 	float: right;
-}
+} */
 
 .footer_btm_copy {
 	font-size: 1.2rem;
@@ -3395,6 +3398,7 @@ footer
 
 .footer_btm_list {
 	font-size: 1.3rem;
+	display: flex;
 }
 
 .footer_btm_copy,
@@ -3410,6 +3414,10 @@ footer
 .footer_btm_list >li:last-child::after{
 	content: none;
 	margin: 0;
+}
+.footer_btm_bottom {
+	display: flex;
+	align-items: center;
 }
 
 /* sidebar 0101 */

@@ -53,12 +53,12 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
           alt=""
         />
         <img
-          class="el_ribbon gsap_ribbon opacity-0 hidden md:inline-block md:w-[372px] c1100:w-[calc(100/1680*569*1vw)] absolute bottom-[-1%] left-[-5%]"
+          class="el_ribbon gsap_ribbon opacity-0 md:inline-block md:w-[372px] c1100:w-[calc(100/1680*569*1vw)] absolute bottom-[-1%] left-[-5%]"
           src="/assets/2025gw/img/Hero_ribbon-bl.svg"
           alt=""
         />
         <img
-          class="el_ribbon gsap_ribbon opacity-0 hidden md:inline-block md:w-[482px] c1100:w-[calc(100/1680*737*1vw)] absolute bottom-[1%] right-[-5%]"
+          class="el_ribbon gsap_ribbon opacity-0 md:inline-block md:w-[482px] c1100:w-[calc(100/1680*737*1vw)] absolute bottom-[1%] right-[-5%]"
           src="/assets/2025gw/img/Hero_ribbon-br.svg"
           alt=""
         />
@@ -136,6 +136,16 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
                   <img
                     class="el_img-blue gsap_ribbon opacity-0 absolute top-[calc(100/375*30*1vw)] md:top-[calc(100/1680*70*1vw)] left-1/2 -translate-x-1/2 inline-block w-[calc(100/375*254px*1vw)] md:w-[486px] c1100:w-[calc(100/1680*737*1vw)] object-cover aspect-auto"
                     src="/assets/2025gw/img/Hero_ribbon-blue.svg"
+                    alt=""
+                  />
+                  <img
+                    class="el_img-yellow-l opacity-0 hidden md:inline-block absolute top-[140px] c1100:top-[calc(100/1680*240*1vw)] left-[-4%] w-[60px] c1100:w-[calc(100/1680*100*1vw)] object-cover aspect-auto"
+                    src="/assets/2025gw/img/Hero_ribbon-yellow.svg"
+                    alt=""
+                  />
+                  <img
+                    class="el_img-yellow-r opacity-0 hidden md:inline-block absolute rotate-90 top-[-160px] c1100:top-[calc(-100/1680*220*1vw)] right-[-25%] w-[60px] c1100:w-[calc(100/1680*100*1vw)] object-cover aspect-auto"
+                    src="/assets/2025gw/img/Hero_ribbon-yellow.svg"
                     alt=""
                   />
                   <h2
@@ -1263,15 +1273,30 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
 
   // リボン
   gsap.set("#Hero .gsap_ribbon", {
+    opacity: 1,
     clipPath: "inset(0 100% 0 0)",
   });
+
 
   gsap.to("#Hero .gsap_ribbon", {
     clipPath: "inset(0 0% 0 0)",
     duration: 1.5,
     delay: 2,
     stagger: 0.2,
+    ease: "power2.inOut",
+  });
+  gsap.to("#Hero .el_img-yellow-l", {
     opacity: 1,
+    duration: 1.5,
+    delay: 2,
+    stagger: 0.2,
+    ease: "power2.inOut",
+  });
+  gsap.to("#Hero .el_img-yellow-r", {
+    opacity: 1,
+    duration: 1.5,
+    delay: 2,
+    stagger: 0.2,
     ease: "power2.inOut",
   });
   
@@ -1484,48 +1509,89 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
   // ==================================================
   // 下線アニメーション
   // ==================================================
-  // index.astroのスクリプト部分に追加
   gsap.set(
-    ".el_img[src*='Sec01_line'], .el_img[src*='Sec02_line'], .el_img[src*='Sec03_line']",
-    {
-      scaleX: 0,
-      transformOrigin: "left center",
-    },
-  );
+  ".el_img[src*='Sec01_line'], .el_img[src*='Sec02_line'], .el_img[src*='Sec03_line']",
+  {
+    clipPath: "inset(0 100% 0 0)",
+    // transformOriginは不要になります
+  },
+);
 
-  // 各セクションの下線に対してアニメーションを設定
-  gsap.to("#Sec1 .el_img[src*='Sec01_line']", {
-    scrollTrigger: {
-      trigger: "#Sec1 .sec_top",
-      start: "top center+=20%",
-    },
-    scaleX: 1,
-    duration: 0.8,
-    delay: 1,
-    stagger: 0.2, // 各下線が順番に表示されるように
-  });
+// 各セクションの下線に対してアニメーションを設定
+gsap.to("#Sec1 .el_img[src*='Sec01_line']", {
+  scrollTrigger: {
+    trigger: "#Sec1 .sec_top",
+    start: "top center+=20%",
+  },
+  clipPath: "inset(0 0% 0 0)",
+  duration: 0.8,
+  delay: 1,
+  stagger: 0.2,
+});
 
-  gsap.to("#Sec2 .el_img[src*='Sec02_line']", {
-    scrollTrigger: {
-      trigger: "#Sec2 .sec_top",
-      start: "top center+=20%",
-    },
-    scaleX: 1,
-    duration: 0.8,
-    delay: 1,
-    stagger: 0.2,
-  });
+gsap.to("#Sec2 .el_img[src*='Sec02_line']", {
+  scrollTrigger: {
+    trigger: "#Sec2 .sec_top",
+    start: "top center+=20%",
+  },
+  clipPath: "inset(0 0% 0 0)",
+  duration: 0.8,
+  delay: 1,
+  stagger: 0.2,
+});
 
-  gsap.to("#Sec3 .el_img[src*='Sec03_line']", {
-    scrollTrigger: {
-      trigger: "#Sec3 .sec_top",
-      start: "top center+=20%",
-    },
-    scaleX: 1,
-    duration: 0.8,
-    delay: 1,
-    stagger: 0.2,
-  });
+gsap.to("#Sec3 .el_img[src*='Sec03_line']", {
+  scrollTrigger: {
+    trigger: "#Sec3 .sec_top",
+    start: "top center+=20%",
+  },
+  clipPath: "inset(0 0% 0 0)",
+  duration: 0.8,
+  delay: 1,
+  stagger: 0.2,
+});
+  // index.astroのスクリプト部分に追加
+  // gsap.set(
+  //   ".el_img[src*='Sec01_line'], .el_img[src*='Sec02_line'], .el_img[src*='Sec03_line']",
+  //   {
+  //     scaleX: 0,
+  //     transformOrigin: "left center",
+  //   },
+  // );
+
+  // // 各セクションの下線に対してアニメーションを設定
+  // gsap.to("#Sec1 .el_img[src*='Sec01_line']", {
+  //   scrollTrigger: {
+  //     trigger: "#Sec1 .sec_top",
+  //     start: "top center+=20%",
+  //   },
+  //   scaleX: 1,
+  //   duration: 0.8,
+  //   delay: 1,
+  //   stagger: 0.2, // 各下線が順番に表示されるように
+  // });
+
+  // gsap.to("#Sec2 .el_img[src*='Sec02_line']", {
+  //   scrollTrigger: {
+  //     trigger: "#Sec2 .sec_top",
+  //     start: "top center+=20%",
+  //   },
+  //   scaleX: 1,
+  //   duration: 0.8,
+  //   delay: 1,
+  //   stagger: 0.2,
+  // });
+
+  // gsap.to("#Sec3 .el_img[src*='Sec03_line']", {
+  //   scrollTrigger: {
+  //     trigger: "#Sec3 .sec_top",
+  //     start: "top center+=20%",
+  //   },
+  //   scaleX: 1,
+  //   duration: 0.8,
+  //   delay: 1,
+  //   stagger: 0.2,
+  // });
   // ==================================================
   // #Hero animation
   // ==================================================

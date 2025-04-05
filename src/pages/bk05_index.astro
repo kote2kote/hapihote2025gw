@@ -30,126 +30,126 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
 		------------------------------------------------------------>
     <section id="Hero">
       <div
-        class="inner"
+        class="inner relative pt-[calc(100/375*16*1vw)] md:pt-[44px] pb-[46px] md:pb-[30px] overflow-hidden"
       >
         <img
-          class="el_ribbon1 gsap_ribbon"
+          class="el_ribbon1 gsap_ribbon opacity-0 hidden md:inline-block w-[calc(100/375*171*1vw)] md:w-[482px] c1100:w-[calc(100/1680*737*1vw)] absolute top-[-10%] left-[-2%]"
           src="/assets/2025gw/img/Hero_ribbon-tl.svg"
           alt=""
         />
         <img
-          class="el_ribbon2 gsap_ribbon"
+          class="el_ribbon2 gsap_ribbon opacity-0 hidden md:inline-block w-[calc(100/375*139*1vw)] md:w-[278px] c1100:w-[calc(100/1680*426*1vw)] absolute top-[-8%] right-[-6%]"
           src="/assets/2025gw/img/Hero_ribbon-tr.svg"
           alt=""
         />
         <img
-          class="el_ribbon3 gsap_ribbon"
+          class="el_ribbon3 gsap_ribbon opacity-0 md:hidden inline-block w-[calc(100/375*171*1vw)] md:w-[482px] c1100:w-[calc(100/1680*737*1vw)] absolute top-[-1%] left-[-2%]"
           src="/assets/2025gw/img/Hero_ribbon-tl@sp.svg"
           alt=""
         />
         <img
-          class="el_ribbon4 gsap_ribbon"
+          class="el_ribbon4 gsap_ribbon hidden opacity-0 md:inline-block md:w-[278px] c1100:w-[calc(100/1680*426*1vw)] absolute top-[-1%] right-[-6%]"
           src="/assets/2025gw/img/Hero_ribbon-tr@sp.svg"
           alt=""
         />
         <img
-          class="el_ribbon5 gsap_ribbon"
+          class="el_ribbon5 gsap_ribbon hidden opacity-0 md:inline-block md:w-[372px] c1100:w-[calc(100/1680*569*1vw)] absolute bottom-[-1%] left-[-5%]"
           src="/assets/2025gw/img/Hero_ribbon-bl.svg"
           alt=""
         />
         <img
-          class="el_ribbon6 gsap_ribbon"
+          class="el_ribbon6 gsap_ribbon hidden opacity-0 md:inline-block md:w-[482px] c1100:w-[calc(100/1680*737*1vw)] absolute bottom-[1%] right-[-5%]"
           src="/assets/2025gw/img/Hero_ribbon-br.svg"
           alt=""
         />
-        <div class="outer_canvas">
+        <div class="outer_canvas relative">
           <div
-            class="outer_pic"
+            class="outer_pic w-full md:w-[1200px] c1100:w-[110vw] flex gap-[calc(100/1680*40*1vw)] md:translate-x-[-5%]"
           >
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img1 gsap_img"
-              src={Heropic01}
-              alt=""
-            />
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img2 gsap_img"
-              src={Heropic02}
-              alt=""
-            />
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img3 gsap_img"
-              src={Heropic03}
-              alt=""
-            />
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img4 gsap_img"
-              src={Heropic04}
-              alt=""
-            />
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img5 gsap_img"
-              src={Heropic05}
-              alt=""
-            />
-            <Picture
-              formats={["avif", "webp"]}
-              class="el_img6 gsap_img"
-              src={Heropic06}
-              alt=""
-            />
+          <Picture
+          formats={["avif", "webp"]}
+          class="el_img1 gsap_img opacity-0 hidden md:inline-block w-full object-cover aspect-auto"
+          src={Heropic01}
+          alt=""
+        />
+        <Picture
+          formats={["avif", "webp"]}
+          class="el_img2 gsap_img opacity-0 inline-block w-full object-cover aspect-auto"
+          src={Heropic02}
+          alt=""
+        />
+        <Picture
+          formats={["avif", "webp"]}
+          class="el_img3 gsap_img opacity-0 inline-block w-full object-cover aspect-auto"
+          src={Heropic03}
+          alt=""
+        />
+        <Picture
+          formats={["avif", "webp"]}
+          class="el_img4 gsap_img opacity-0 inline-block w-full object-cover aspect-auto"
+          src={Heropic04}
+          alt=""
+        />
+        <Picture
+          formats={["avif", "webp"]}
+          class="el_img5 gsap_img opacity-0 inline-block w-full object-cover aspect-auto"
+          src={Heropic05}
+          alt=""
+        />
+        <Picture
+          formats={["avif", "webp"]}
+          class="el_img6 gsap_img opacity-0 hidden md:inline-block w-full object-cover aspect-auto"
+          src={Heropic06}
+          alt=""
+        />
           </div>
           <div
-            class="outer_text-block"
+            class="outer_text-block opacity-0 absolute top-0 left-0 w-full h-full flex justify-center pt-[calc(100/375*21*1vw)] md:pt-[100px]"
           >
-            <div class="inner">
+            <div class="inner flex flex-col items-center">
               <img
-                class="el_img-gw"
+                class="el_img-gw inline-block w-[calc(100/375*326*1vw)] md:w-[344px] c1100:w-[calc(100/1680*522*1vw)] object-cover aspect-auto mb-[calc(100/1680*10*1vw)]"
                 src="/assets/2025gw/img/Hero_text-lead.svg"
                 alt=""
               />
-              <div class="outer_hapihote">
+              <div class="outer_hapihote relative z-10">
                 <img
-                  class="el_img-hapihote"
+                  class="el_img-hapihote inline-block w-[calc(100/375*290*1vw)] md:w-[528px] c1100:w-[calc(100/1680*813*1vw)] object-cover aspect-auto"
                   src="/assets/2025gw/img/Hero_text-hapihote.svg"
                   alt="HAPIHOTE!"
                 />
                 <img
-                  class="el_img-text-pink"
+                  class="el_img-text-pink absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 inline-block w-[calc(100/375*711*1vw)] md:w-[468px] c1100:w-[calc(100/1680*711*1vw)] object-cover aspect-auto"
                   src="/assets/2025gw/img/Hero_text-pink.svg"
                   alt=""
                 />
               </div>
-              <div class="outer_fukidashi">
+              <div class="outer_fukidashi relative">
                 <img
-                  class="el_img-fukidashi"
+                  class="el_img-fukidashi inline-block w-[calc(100/375*268*1vw)] md:w-[514px] c1100:w-[calc(100/1680*778*1vw)] translate-y-[-15%] object-cover aspect-auto"
                   src="/assets/2025gw/img/Hero_fukidashi.svg"
                   alt=""
                 />
                 <div
-                  class="inner-outer"
+                  class="inner-outer absolute top-0 left-0 w-full h-full text-center pt-[calc(100/375*16*1vw)] md:pt-[10px] c1100:pt-[calc(100/1680*20*1vw)]"
                 >
                   <img
-                    class="el_img-blue gsap_ribbon"
+                    class="el_img-blue gsap_ribbon opacity-0 absolute top-[calc(100/375*30*1vw)] md:top-[calc(100/1680*70*1vw)] left-1/2 -translate-x-1/2 inline-block w-[calc(100/375*254px*1vw)] md:w-[486px] c1100:w-[calc(100/1680*737*1vw)] object-cover aspect-auto"
                     src="/assets/2025gw/img/Hero_ribbon-blue.svg"
                     alt=""
                   />
                   <img
-                    class="el_img-yellow-l"
+                    class="el_img-yellow-l opacity-0 hidden md:inline-block absolute top-[140px] c1100:top-[calc(100/1680*240*1vw)] left-[-4%] w-[60px] c1100:w-[calc(100/1680*100*1vw)] object-cover aspect-auto"
                     src="/assets/2025gw/img/Hero_ribbon-yellow.svg"
                     alt=""
                   />
                   <img
-                    class="el_img-yellow-r"
+                    class="el_img-yellow-r opacity-0 hidden md:inline-block absolute rotate-90 top-[-160px] c1100:top-[calc(-100/1680*220*1vw)] right-[-25%] w-[60px] c1100:w-[calc(100/1680*100*1vw)] object-cover aspect-auto"
                     src="/assets/2025gw/img/Hero_ribbon-yellow.svg"
                     alt=""
                   />
                   <h2
-                    class="el_h"
+                    class="el_h text-[calc(100/375*16*1vw)] md:text-[34px] c1100:text-[calc(100/1680*50*1vw)] font-bold leading-[1.3] relative"
                   >
                     GWこそ時間を有効活用!<br />
                     ハピホテ使いこなし術をご紹介!
@@ -160,19 +160,19 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
           </div>
         </div>
         <div
-          class="outer_text"
+          class="outer_text opacity-0 px-[20px] md:px-0 relative md:text-center text-[calc(100/375*16*1vw)] md:text-[18px] font-bold leading-[2] md:leading-[2.3] pt-[20px]"
         >
-          <span>GWはハピホテで決まり！！</span><br />
-          <span
+          <span class="bg-white md:p-2">GWはハピホテで決まり！！</span><br />
+          <span class="bg-white md:p-2"
             >せっかくの連休は近場も遠出も、いつもよりアップデートした思い出を作りたい！</span
           ><br />
-          <span
+          <span class="bg-white md:p-2"
             >混雑するGWも、ハピホテをフル活用でストレスフリーに過ごしちゃおう♪</span
           ><br />
-          <span
+          <span class="bg-white md:p-2"
             >ハピホテファミリーのうたとるかが、とっておきの裏技をご紹介！</span
           ><br />
-          <span
+          <span class="bg-white md:p-2"
             >これであなたもGWを満喫できること間違いなし！</span
           >
         </div>
@@ -183,69 +183,69 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
 		#Sec1
 		------------------------------------------------------------>
     <section id="Sec1">
-      <div class="inner">
+      <div class="inner relative pt-[calc(100/375*90*1vw)] md:pt-0">
         <div
-          class="el_bg-photo"
+          class="el_bg-photo absolute top-0 left-0 w-full h-full md:pt-[100px]"
         >
           <Picture
             formats={["avif", "webp"]}
-            class="el_img"
+            class="el_img inline-block w-full h-full object-cover aspect-auto"
             src={Sec01Bg}
             alt="海の背景画像"
           />
         </div>
         <!-- .sec_top --------------------------------------------------->
-        <section class="sec_top">
-          <div class="inner">
+        <section class="sec_top px-[30px]">
+          <div class="inner relative">
             <div
-              class="outer_height"
+              class="outer_height hidden md:block md:h-[500px] c1100:h-[calc(100/1680*750*1vw)]"
             >
             </div>
             <div
-              class="inner-outer"
+              class="inner-outer md:absolute md:top-[130px] c1100:top-[12vw] md:left-[12%] w-full md:w-[88%] c1100:w-[84vw] md:h-[360px] c1100:h-[calc(100/1680*550*1vw)] bg-[#F9FD3A] rounded-[20px]"
             >
-              <div class="inner">
+              <div class="inner maxmd:w-[90%] maxmd:mx-auto relative h-full">
                 <h3
-                  class="outer_h"
+                  class="outer_h maxmd:space-y-[calc(100/375*6*1vw)] pt-[calc(100/375*54*1vw)] md:pt-0 md:absolute top-[19%] left-[40%] text-[calc(100/375*18*1vw)] md:text-[16px] c1100:text-[calc(100/1680*25*1vw)] font-bold"
                 >
-                  <div class="outer_h-01">
+                  <div class="outer_h-01 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*247*1vw)] md:w-[calc(100/1680*350*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec01_line01.svg"
                       alt=""
                     />
-                    <span class="el_span"
+                    <span class="el_span relative"
                       >旅の主役は観光だけじゃない！</span
                     >
                   </div>
-                  <div class="outer_h-02">
+                  <div class="outer_h-02 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*186*1vw)] md:w-[calc(100/1680*263*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec01_line02.svg"
                       alt=""
                     />
-                    <span class="el_span">とびきり素敵な空間で、</span>
+                    <span class="el_span relative">とびきり素敵な空間で、</span>
                   </div>
-                  <div class="outer_h-03">
+                  <div class="outer_h-03 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*186*1vw)] md:w-[calc(100/1680*263*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec01_line03.svg"
                       alt=""
                     />
-                    <span class="el_span">2人だけの贅沢な時間を</span>
+                    <span class="el_span relative">2人だけの贅沢な時間を</span>
                   </div>
                 </h3>
                 <div
-                  class="outer_p"
+                  class="outer_p maxmd:space-y-[calc(100/375*16*1vw)] maxmd:pt-[calc(100/375*16*1vw)] maxmd:pb-[calc(100/375*26*1vw)] md:absolute top-[50%] left-[20%] font-medium"
                 >
                   <p
-                    class="el_p1"
+                    class="el_p1 leading-[1.8] md:leading-[2] text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*40*1vw)]"
                   >
                     GWといえば、旅行にぴったりな大型連休。<br />
                     でも・・・どこもかしこも人で溢れかえりホテルも普段の倍以上のお値段・・・
                   </p>
                   <p
-                    class="el_p2"
+                    class="el_p2 leading-[1.8] md:leading-[2] text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*40*1vw)]"
                   >
                     スペシャルシーズンこそ、実はラブホテルがおすすめ♡<br />
                     比較的リーズナブルで、日常を忘れさせてくれるエンタメ要素満載のお部屋たちにワクワクが止まらない！<br
@@ -253,18 +253,18 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
                     いつもと違った雰囲気を味わおう♪
                   </p>
                   <p
-                    class="el_p3"
+                    class="el_p3 text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)]"
                   >
                     ハピホテではたくさんの宿泊予約プランが掲載されているから、気になるホテルを探してみてね！
                   </p>
                 </div>
                 <img
-                  class="el_num"
+                  class="el_num inline-block absolute top-[1%] md:top-0 -translate-y-1/2 right-[3%] md:right-[15%] w-[calc(100/375*109_*1vw)] md:w-[calc(100/1680*162*1vw)] object-cover aspect-auto"
                   src="/assets/2025gw/img/Sec01_num.svg"
                   alt=""
                 />
                 <div
-                  class="outer_text"
+                  class="outer_text hidden md:block absolute top-0 -translate-y-[10%] right-[10%] text-[calc(100/1680*12*1vw)] v_font-jost font-bold [writing-mode:vertical-rl]"
                 >
                   ENJOY A LUXURIOUS TIME FOR TWO AT<br />
                   IN THE MOST WONDERFUL SPACE.
@@ -273,22 +273,22 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
             </div>
             <Picture
               formats={["avif", "webp"]}
-              class="el_img1"
+              class="el_img1 absolute top-[-3%] md:top-0 left-[5%] md:left-0 translate-y-[-60%] md:translate-y-0 inline-block w-[calc(100/375*134*1vw)] md:w-[458px] c1100:w-[calc(100/1680*700*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec01Pic01}
               alt="海辺のカップルの写真"
             />
             <Picture
               formats={["avif", "webp"]}
-              class="el_img2"
+              class="el_img2 absolute top-[-5%] md:top-[220px] c1100:top-[20vw] left-[36%] md:left-[5vw] inline-block w-[calc(100/375*50*1vw)] md:w-[170px] c1100:w-[calc(100/1680*260*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec01Pic02}
               alt="夕焼けの海辺で乾杯の写真"
             />
           </div>
         </section>
         <!-- .sec_bottom --------------------------------------------------->
-        <section class="sec_bottom">
+        <section class="sec_bottom relative">
           <div
-            class="inner"
+            class="inner flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]"
           >
             <blockquote
               class="instagram-media"
@@ -426,25 +426,28 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
       <!-- .footer --------------------------------------------------->
       <footer class="footer">
         <div
-          class="inner"
+          class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]"
         >
           <p
-            class="el_p"
+            class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2025gw/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2025gw/img/icon_r-rect.svg)]"
           >
-            <span class="el_span-top"
+            <span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"
               ><img
+                class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto"
                 src="./assets/2025gw/img/icon_pin.svg"
                 alt=""
               /></span
             >
             <span
-              class="el_span-bottom"
+              class="el_span-bottom font-bold text-[calc(100/375*15*1vw)] md:text-[20px]"
               >地図でKeepできる</span
             >
           </p>
           <a
             href="#"
-            class="el_link v_font-sans-serif"
+            class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#F9FD3A] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]"
           >
             ホテルを探す
           </a>
@@ -456,70 +459,70 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
 		#Sec2
 		------------------------------------------------------------>
     <section id="Sec2">
-      <div class="inner">
+      <div class="inner relative pt-[calc(100/375*90*1vw)] md:pt-0">
         <div
-          class="el_bg-photo"
+          class="el_bg-photo absolute top-0 left-0 w-full h-full md:pt-[60px]"
         >
           <Picture
             formats={["avif", "webp"]}
-            class="el_img"
+            class="el_img inline-block w-full h-full object-cover aspect-auto"
             src={Sec02Bg}
             alt="BBQの背景画像"
           />
         </div>
         <!-- .sec_top --------------------------------------------------->
-        <section class="sec_top">
-          <div class="inner">
+        <section class="sec_top px-[30px]">
+          <div class="inner relative">
             <div
-              class="outer_height"
+              class="outer_height hidden md:block md:h-[500px] c1100:h-[calc(100/1680*750*1vw)]"
             >
             </div>
             <div
-              class="inner-outer"
+              class="inner-outer md:absolute md:top-[130px] c1100:top-[12vw] md:right-[12%] w-full md:w-[88%] c1100:w-[84vw] md:h-[360px] c1100:h-[calc(100/1680*550*1vw)] bg-[#D8FD3A] rounded-[20px]"
             >
-              <div class="inner">
+              <div class="inner maxmd:w-[90%] maxmd:mx-auto relative h-full">
                 <h3
-                  class="outer_h"
+                  class="outer_h maxmd:space-y-[calc(100/375*6*1vw)] pt-[calc(100/375*54*1vw)] md:pt-0 md:absolute top-[19%] left-[20%] text-[calc(100/375*18*1vw)] md:text-[16px] c1100:text-[calc(100/1680*25*1vw)] font-bold"
                 >
-                  <div class="outer_h-01">
+                  <div class="outer_h-01 relative">
                     <img
-                      class="el_img1 el_img-sec2"
+                      class="el_img1 hidden md:inline-block absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*247*1vw)] md:w-[calc(100/1680*419*1vw)]"
                       src="/assets/2025gw/img/Sec02_line01.svg"
                       alt=""
                     />
                     <img
-                      class="el_img2 el_img-sec2"
+                      class="el_img2 md:hidden absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*198*1vw)] md:w-[calc(100/1680*419*1vw)]"
                       src="/assets/2025gw/img/Sec02_line01@sp.svg"
                       alt=""
                     />
-                    <span class="el_span1"
+                    <span class="el_span1 hidden md:inline-block relative"
                       >～BBQ・テーマパーク・ドライブ～</span
                     >
-                    <span class="el_span2"
+                    <span class="el_span2 md:hidden relative"
                       >～BBQ・テーマパーク・</span
                     >
                   </div>
-                  <div class="outer_h-02">
+                  <div class="outer_h-02 relative">
                     <img
-                      class="el_img1 el_img-sec2"
+                      class="el_img1 hidden md:inline-block absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*186*1vw)] md:w-[calc(100/1680*503*1vw)]"
                       src="/assets/2025gw/img/Sec02_line02.svg"
                       alt=""
                     />
                     <img
-                      class="el_img2 el_img-sec2"
+                      class="el_img2 md:hidden absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*243*1vw)] md:w-[calc(100/1680*503*1vw)]"
                       src="/assets/2025gw/img/Sec02_line02@sp.svg"
                       alt=""
                     />
-                    <span class="el_span1"
+                    <span class="el_span1 hidden md:inline-block relative"
                       >GWのレジャーは万全のコンディションで◎</span
                     >
-                    <span class="el_span2"
+                    <span class="el_span2 md:hidden relative"
                       >ドライブ～ GWのレジャーは</span
                     >
                   </div>
-                  <div class="outer_h-03">
+                  <div class="outer_h-03 relative md:hidden">
                     <img
-                      class="el_img el_img-sec2"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*217*1vw)] md:w-[calc(100/1680*263*1vw)]"
                       src="/assets/2025gw/img/Sec02_line03@sp.svg"
                       alt=""
                     />
@@ -528,28 +531,28 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
                   </div>
                 </h3>
                 <div
-                  class="outer_p"
+                  class="outer_p maxmd:space-y-[calc(100/375*16*1vw)] maxmd:pt-[calc(100/375*16*1vw)] maxmd:pb-[calc(100/375*26*1vw)] md:absolute top-[50%] left-[20%] font-medium"
                 >
                   <p
-                    class="el_sec2-p1"
+                    class="el_sec2-p1 leading-[1.8] md:leading-[2] text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*40*1vw)]"
                   >
                     GWをとことん楽しむなら、ハピホテ休憩予約がマスト！イベントの合間に、アクティビティ後のクールダウンに。<br
                     />
                     エンタメもリラックスも思いのままに過ごせるのがラブホテル。
                   </p>
                   <p
-                    class="el_sec2-p2"
+                    class="el_sec2-p2 text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*20*1vw)]"
                   >
                     2人きりの空間で、賢く時間を使おう！
                   </p>
                 </div>
                 <img
-                  class="el_sec2-num"
+                  class="el_sec2-num inline-block absolute top-[1%] md:top-0 -translate-y-1/2 left-[3%] md:left-[12%] w-[calc(100/375*109_*1vw)] md:w-[calc(100/1680*162*1vw)] object-cover aspect-auto"
                   src="/assets/2025gw/img/Sec02_num.svg"
                   alt=""
                 />
                 <div
-                  class="outer_sec2-text"
+                  class="outer_sec2-text hidden md:block absolute top-0 -translate-y-[10%] left-[5%] text-[calc(100/1680*12*1vw)] v_font-jost font-bold [writing-mode:vertical-rl]"
                 >
                   GW LEISURE ACTIVITIES IN<br />
                   PERFECT CONDITION
@@ -558,22 +561,22 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
             </div>
             <Picture
               formats={["avif", "webp"]}
-              class="el_sec2-img1"
+              class="el_sec2-img1 absolute top-[-3%] md:top-0 right-[5%] md:right-0 translate-y-[-60%] md:translate-y-0 inline-block w-[calc(100/375*134*1vw)] md:w-[458px] c1100:w-[calc(100/1680*700*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec02Pic01}
               alt="BBQの写真"
             />
             <Picture
               formats={["avif", "webp"]}
-              class="el_sec2-img2"
+              class="el_sec2-img2 absolute top-[-5%] md:top-[220px] c1100:top-[20vw] right-[2%] md:right-[5vw] inline-block w-[calc(100/375*50*1vw)] md:w-[170px] c1100:w-[calc(100/1680*260*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec02Pic02}
               alt="高原ドライブの写真"
             />
           </div>
         </section>
         <!-- .sec_bottom --------------------------------------------------->
-        <section class="sec_bottom">
+        <section class="sec_bottom relative">
           <div
-            class="inner"
+            class="inner flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]"
           >
             <blockquote
               class="instagram-media"
@@ -711,25 +714,28 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
       <!-- .footer --------------------------------------------------->
       <footer class="footer">
         <div
-          class="inner"
+          class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]"
         >
           <p
-            class="el_p"
+            class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2025gw/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2025gw/img/icon_r-rect.svg)]"
           >
-            <span class="el_span-top"
+            <span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"
               ><img
+                class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto"
                 src="./assets/2025gw/img/icon_pin.svg"
                 alt=""
               /></span
             >
             <span
-              class="el_span-bottom"
+              class="el_span-bottom font-bold text-[calc(100/375*15*1vw)] md:text-[20px]"
               >地図でKeepできる</span
             >
           </p>
           <a
             href="#"
-            class="el_link"
+            class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#D8FD3B] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]"
           >
             ホテルを探す
           </a>
@@ -741,81 +747,81 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
 		#Sec3
 		------------------------------------------------------------>
     <section id="Sec3">
-      <div class="inner">
+      <div class="inner relative pt-[calc(100/375*90*1vw)] md:pt-0">
         <div
-          class="el_bg-photo"
+          class="el_bg-photo absolute top-0 left-0 w-full h-full md:pt-[100px]"
         >
           <Picture
             formats={["avif", "webp"]}
-            class="el_img"
+            class="el_img inline-block w-full h-full object-cover aspect-auto"
             src={Sec03Bg}
             alt="スマホを持つ男性の背景画像"
           />
         </div>
         <!-- .sec_top --------------------------------------------------->
-        <section class="sec_top">
-          <div class="inner">
+        <section class="sec_top px-[30px]">
+          <div class="inner relative">
             <div
-              class="outer_height"
+              class="outer_height hidden md:block md:h-[500px] c1100:h-[calc(100/1680*750*1vw)]"
             >
             </div>
             <div
-              class="inner-outer"
+              class="inner-outer md:absolute md:top-[130px] c1100:top-[12vw] md:left-[12%] w-full md:w-[88%] c1100:w-[84vw] md:h-[360px] c1100:h-[calc(100/1680*550*1vw)] bg-[#3AFDFD] rounded-[20px]"
             >
-              <div class="inner">
+              <div class="inner maxmd:w-[90%] maxmd:mx-auto relative h-full">
                 <h3
-                  class="outer_h"
+                  class="outer_h maxmd:space-y-[calc(100/375*6*1vw)] pt-[calc(100/375*54*1vw)] md:pt-0 md:absolute top-[19%] left-[40%] text-[calc(100/375*18*1vw)] md:text-[16px] c1100:text-[calc(100/1680*25*1vw)] font-bold"
                 >
-                  <div class="outer_h-01">
+                  <div class="outer_h-01 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*239*1vw)] md:w-[calc(100/1680*331*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec03_line01.svg"
                       alt=""
                     />
-                    <span class="el_span"
+                    <span class="el_span relative"
                       >急な予定変更も心配ご無用！</span
                     >
                   </div>
-                  <div class="outer_h-02">
+                  <div class="outer_h-02 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*148*1vw)] md:w-[calc(100/1680*205*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec03_line02.svg"
                       alt=""
                     />
-                    <span class="el_span">ハピホテKeepで</span>
+                    <span class="el_span relative">ハピホテKeepで</span>
                   </div>
-                  <div class="outer_h-03">
+                  <div class="outer_h-03 relative">
                     <img
-                      class="el_img"
+                      class="el_img absolute top-[calc(100/375*16*1vw)] md:top-[calc(100/1680*26*1vw)] left-0 w-[calc(100/375*148*1vw)] md:w-[calc(100/1680*205*1vw)] inline-block"
                       src="/assets/2025gw/img/Sec03_line03.svg"
                       alt=""
                     />
-                    <span class="el_span">思い出をプラスに</span>
+                    <span class="el_span relative">思い出をプラスに</span>
                   </div>
                 </h3>
                 <div
-                  class="outer_p"
+                  class="outer_p maxmd:space-y-[calc(100/375*16*1vw)] maxmd:pt-[calc(100/375*16*1vw)] maxmd:pb-[calc(100/375*26*1vw)] md:absolute top-[50%] left-[20%] font-medium"
                 >
                   <p
-                    class="el_p1"
+                    class="el_p1 leading-[1.8] md:leading-[2] text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*40*1vw)]"
                   >
                     GWの急な雨や渋滞、予想外の「もう1泊！」<br />
                     なにかと起こるイレギュラー・・・そんな時、頼りになるのがハピホテKeep！
                   </p>
                   <p
-                    class="el_p2"
+                    class="el_p2 leading-[1.8] md:leading-[2] text-[calc(100/375*15*1vw)] md:text-[10px] c1100:text-[calc(100/1680*15*1vw)] pb-[calc(100/1680*20*1vw)]"
                   >
                     Keepマークで空いてるお部屋が一目でわかる！<br />
                     スマートにホテルをキープして、貴重なGWを1分1秒大切にしよう！
                   </p>
                 </div>
                 <img
-                  class="el_num"
+                  class="el_num inline-block absolute top-[1%] md:top-0 -translate-y-1/2 right-[3%] md:right-[15%] w-[calc(100/375*109_*1vw)] md:w-[calc(100/1680*162*1vw)] object-cover aspect-auto"
                   src="/assets/2025gw/img/Sec03_num.svg"
                   alt=""
                 />
                 <div
-                  class="outer_text"
+                  class="outer_text hidden md:block absolute top-0 -translate-y-[10%] right-[10%] text-[calc(100/1680*12*1vw)] v_font-jost font-bold [writing-mode:vertical-rl]"
                 >
                   HAPPIHOTE KEEP AT<br />
                   MEMORIES ARE A PLUS!
@@ -824,22 +830,22 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
             </div>
             <Picture
               formats={["avif", "webp"]}
-              class="el_img1"
+              class="el_img1 absolute top-[-3%] md:top-0 left-[5%] md:left-0 translate-y-[-60%] md:translate-y-0 inline-block w-[calc(100/375*134*1vw)] md:w-[458px] c1100:w-[calc(100/1680*700*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec03Pic01}
               alt="スマホを持つ男性の写真"
             />
             <Picture
               formats={["avif", "webp"]}
-              class="el_img2"
+              class="el_img2 absolute top-[-5%] md:top-[220px] c1100:top-[20vw] left-[36%] md:left-[5vw] inline-block w-[calc(100/375*50*1vw)] md:w-[170px] c1100:w-[calc(100/1680*260*1vw)] object-cover aspect-auto rounded-lg md:rounded-[20px]"
               src={Sec03Pic02}
               alt="散歩するカップルの写真"
             />
           </div>
         </section>
         <!-- .sec_bottom --------------------------------------------------->
-        <section class="sec_bottom">
+        <section class="sec_bottom relative">
           <div
-            class="inner"
+            class="inner flex justify-center py-[calc(100/375*30*1vw)] px-[calc(100/375*20*1vw)] md:py-[56px]"
           >
             <blockquote
               class="instagram-media"
@@ -977,25 +983,28 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
       <!-- .footer --------------------------------------------------->
       <footer class="footer">
         <div
-          class="inner"
+          class="inner flex flex-col items-center pt-[calc(100/375*30*1vw)] pb-[calc(100/375*50*1vw)] maxmd:px-[calc(100/375*20*1vw)] md:pt-[48px] md:pb-[78px]"
         >
           <p
-            class="el_p"
+            class="el_p flex items-center relative pb-[calc(100/375*10*1vw)] md:pb-[10px]
+					before:absolute before:contents-[''] before:top-0 before:left-0 before:w-[calc(100/375*20*1vw)] before:h-[calc(100/375*20*1vw)] before:md:w-[27px] before:md:h-[27px] before:translate-x-[calc(-150%)] before:translate-y-[calc(15%)] before:md:translate-y-[calc(25%)] before:bg-cover before:bg-[url(/assets/2025gw/img/icon_l-rect.svg)]
+					after:absolute after:contents-[''] after:top-0 after:right-0 after:w-[calc(100/375*20*1vw)] after:h-[calc(100/375*20*1vw)] after:md:w-[27px] after:md:h-[27px] after:translate-x-[calc(120%)] after:translate-y-[calc(15%)] after:md:translate-y-[calc(25%)] after:bg-cover after:bg-[url(/assets/2025gw/img/icon_r-rect.svg)]"
           >
-            <span class="el_span-top"
+            <span class="el_span-top mr-[calc(100/375*10*1vw)] md:mr-[10px]"
               ><img
+                class="inline-block w-[calc(100/375*11*1vw)] md:w-full object-cover aspect-auto"
                 src="./assets/2025gw/img/icon_pin.svg"
                 alt=""
               /></span
             >
             <span
-              class="el_span-bottom"
+              class="el_span-bottom font-bold text-[calc(100/375*15*1vw)] md:text-[20px]"
               >地図でKeepできる</span
             >
           </p>
           <a
             href="#"
-            class="el_link"
+            class="el_link v_font-sans-serif text-[calc(100/375*20*1vw)] md:text-[30px] font-bold flex justify-center items-center bg-[#3AFDFD] rounded-full w-full md:w-[420px] h-[calc(100/375*60*1vw)] md:h-[90px]"
           >
             ホテルを探す
           </a>
@@ -1248,12 +1257,12 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
     ease: "power2.out",
   });
 
-  gsap.set("#Hero .outer_pic .gsap_img", {
+  gsap.set("#Hero .outer_pic .el_img", {
     y: -50,
   });
 
   // 写真が元の位置に戻るアニメーション
-  gsap.to("#Hero .outer_pic .gsap_img", {
+  gsap.to("#Hero .outer_pic .el_img", {
     opacity: 1,
     y: 0,
     duration: 1,
@@ -1501,7 +1510,7 @@ import LinkBgSp from "../assets/img/Link_bg@sp.jpg";
   // 下線アニメーション
   // ==================================================
   gsap.set(
-  ".el_img[src*='Sec01_line'], .el_img-sec2[src*='Sec02_line'], .el_img[src*='Sec03_line']",
+  ".el_img[src*='Sec01_line'], .el_img[src*='Sec02_line'], .el_img[src*='Sec03_line']",
   {
     clipPath: "inset(0 100% 0 0)",
     // transformOriginは不要になります
@@ -1520,7 +1529,7 @@ gsap.to("#Sec1 .el_img[src*='Sec01_line']", {
   stagger: 0.2,
 });
 
-gsap.to("#Sec2 .el_img-sec2[src*='Sec02_line']", {
+gsap.to("#Sec2 .el_img[src*='Sec02_line']", {
   scrollTrigger: {
     trigger: "#Sec2 .sec_top",
     start: "top center+=20%",
